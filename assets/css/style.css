@@ -1359,11 +1359,10 @@ img {
     padding-inline: 42px;
   }
 
-  .projects-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
+  
+  .project-preview img {
+    height: 195px;
   }
-
   .project-preview {
     height: 215px;
   }
@@ -1371,7 +1370,9 @@ img {
   .project-description {
     min-height: auto;
   }
-
+  .project-description {
+    line-height: 1.5;
+}
   .footer-content {
     grid-template-columns: 1fr;
     gap: 35px;
