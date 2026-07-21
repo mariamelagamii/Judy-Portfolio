@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="نماذج من المتاجر الإلكترونية التي قامت Judy Marketing بتصميمها وتطويرها." />
+  <title>أعمالنا | Judy Marketing</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="icon" type="image/png" href="https://b.top4top.io/p_3754q23bj1.png">
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div class="top-banner">
+    <span><i class="fa-solid fa-wand-magic-sparkles"></i> عندك متجر؟ خلينا نصممه ونسوقه لك</span>
+    <a class="whatsapp-btn" href="https://wa.me/966552261549?text=مرحباً، أريد الاستفسار عن تصميم متجر إلكتروني"
+      target="_blank" rel="noopener">
+      <i class="fa-brands fa-whatsapp"></i>
+      تواصل معنا الآن
+    </a>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="https://judymarketing.com" class="logo" aria-label="Judy Marketing">
+        <img src="https://b.top4top.io/p_3754q23bj1.png" alt="Judy Marketing">
+      </a>
+      <nav class="nav-links" aria-label="التنقل الرئيسي">
+        <a href="https://judymarketing.com">الرئيسية</a>
+        <a href="https://judymarketing.com">كوبونات الخصم</a>
+        <a href="#portfolio" class="active">أعمالنا</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-decoration decoration-one"></div>
+      <div class="hero-decoration decoration-two"></div>
+
+      <div class="container hero-content">
+        <span class="eyebrow">نماذج نفتخر بها</span>
+        <h1>أعمالنا</h1>
+        <p>
+          نحول الأفكار إلى تجارب رقمية متكاملة، من تصميم المتاجر الإلكترونية والهوية البصرية إلى التسويق الرقمي، تحسين
+          محركات
+          البحث (SEO)، وتصميم المحتوى الإبداعي.
+        </p>
+      </div>
+    </section>
+
+    <section class="portfolio-section" id="portfolio">
+      <div class="container">
+        <div class="categories-wrapper">
+          <button class="scroll-btn left" id="scrollLeft" aria-label="تحريك التصنيفات لليسار">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+
+          <div class="categories" id="categories"></div>
+
+          <button class="scroll-btn right" id="scrollRight" aria-label="تحريك التصنيفات لليمين">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div class="projects-grid" id="projectsContainer"></div>
+
+        <div class="empty-state" id="emptyState" hidden>
+          <i class="fa-regular fa-folder-open"></i>
+          <h3>لا توجد أعمال في هذا التصنيف حالياً</h3>
+          <p>جرّبي اختيار تصنيف آخر.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section" id="testimonials">
+      <div class="testimonials-container">
+
+        <div class="testimonials-header">
+          <div class="testimonials-heading">
+            <span class="section-label">
+              <i class="fa-regular fa-comments"></i>
+              آراء عملائنا
+            </span>
+
+            <h2>
+              ثقتكم هي سر
+              <span>نجاحنا</span>
+            </h2>
+
+            <p>
+              نفخر بالعمل مع علامات تجارية متنوعة، ونسعى دائمًا لتقديم تجربة
+              احترافية ونتائج تتجاوز توقعات عملائنا.
+            </p>
+          </div>
+
+          <div class="testimonials-navigation">
+            <button class="testimonial-arrow" id="testimonialNext" type="button" aria-label="الرأي التالي">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <button class="testimonial-arrow" id="testimonialPrev" type="button" aria-label="الرأي السابق">
+              <i class="fa-solid fa-arrow-left"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="testimonials-wrapper">
+          <div class="testimonials-track" id="testimonialsTrack"></div>
+        </div>
+
+        <div class="testimonials-dots" id="testimonialsDots"></div>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-card">
+          <div class="cta-art">
+            <img src="https://b.top4top.io/p_3754q23bj1.png" alt="">
+            <span class="line"></span>
+            <span class="dot dot-one"></span>
+            <span class="dot dot-two"></span>
+          </div>
+
+          <div class="cta-copy">
+            <h2>جاهز تبدأ مشروعك التالي؟</h2>
+            <p>نحوّل فكرتك إلى متجر احترافي يعكس هوية علامتك التجارية ويحقق لك النجاح.</p>
+          </div>
+
+          <a href="https://wa.me/966552261549?text=مرحباً، أريد بدء مشروع متجر جديد" target="_blank" rel="noopener"
+            class="cta-btn">
+            <i class="fa-brands fa-telegram"></i>
+            تواصل معنا
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="custom-footer">
+    <div class="footer-curve"></div>
+
+    <div class="footer-content">
+      <div class="footer-brand">
+        <a href="https://judymarketing.com"><img src="https://b.top4top.io/p_3754q23bj1.png" alt="Judy Marketing"></a>
+        <p>Shimaa Ali & JUDY MARKETING شريك معتمد بمنصة سله نساعدك على تحقيق الربح بسهولة وندعمك لتبدء مشوارك بالتجارة
+          الإلكترونية وتصبح ناجحاً ومستقلاً بذاتك هدفنا نجاحك...</p>
+      </div>
+
+      <div class="footer-column">
+        <h3>وسائل التواصل</h3>
+        <div class="footer-social">
+          <a href="https://wa.me/966552261549" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i><span>واتساب</span>
+          </a>
+          <a href="mailto:judymarketing.sa@gmail.com">
+            <i class="fa-regular fa-envelope"></i><span>البريد</span>
+          </a>
+          <a href="https://t.me/marketingdropshiping" target="_blank" rel="noopener">
+            <i class="fa-brands fa-telegram"></i><span>تيليجرام</span>
+          </a>
+          <a href="https://www.youtube.com/channel/UCcuFN1nWTMUfF5GEm7qcxtg" target="_blank" rel="noopener">
+            <i class="fa-brands fa-youtube"></i><span>يوتيوب</span>
+          </a>
+          <a href="https://www.tiktok.com/@judymarketing" target="_blank" rel="noopener">
+            <i class="fa-brands fa-tiktok"></i><span>تيك توك</span>
+          </a>
+          <a href="https://www.instagram.com/judy4marketing/" target="_blank" rel="noopener">
+            <i class="fa-brands fa-instagram"></i><span>إنستغرام</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-column footer-links">
+        <h3>روابط مهمة</h3>
+        <div class="s-menu-footer-list">
+          <a href="https://judymarketing.com/blog">المدونة</a>
+          <a href="https://judy-coupons.vercel.app">كوبونات الخصم والعروض</a>
+          <a href="https://judymarketing.com/سياسة-الاستخدام-والخصوصية/page-1703664663">سياسة الاستخدام والخصوصية</a>
+          <a href="https://judymarketing.com/سياسة-الاسترجاع/page-1394227474">سياسة الاسترجاع</a>
+          <a href="https://judymarketing.com/الشكاوى-والمقترحات/page-678955808">الشكاوى والمقترحات</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Judy Marketing — جميع الحقوق محفوظة</span>
+    </div>
+  </footer>
+  <button id="scrollTopBtn" aria-label="العودة للأعلى">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
