@@ -56,31 +56,48 @@
 
     <section class="portfolio-section" id="portfolio">
       <div class="container">
-        <div class="categories-wrapper">
-          <button class="scroll-btn left" id="scrollLeft" aria-label="تحريك التصنيفات لليسار">
-            <i class="fa-solid fa-chevron-left"></i>
-          </button>
-
-          <div class="categories" id="categories"></div>
-
-          <button class="scroll-btn right" id="scrollRight" aria-label="تحريك التصنيفات لليمين">
+        <div class="category-slider-wrapper">
+          <button class="category-slider-arrow category-next" id="categoryNext" type="button"
+            aria-label="التصنيفات التالية">
             <i class="fa-solid fa-chevron-right"></i>
           </button>
+
+          <div class="category-showcase" id="categoryShowcase"></div>
+
+          <button class="category-slider-arrow category-prev" id="categoryPrev" type="button"
+            aria-label="التصنيفات السابقة">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+        </div>
+
+        <div class="projects-heading">
+          <h2 id="projectsTitle">
+            جميع المشاريع
+          </h2>
+
+          <p id="projectsSubtitle">
+            جميع الأعمال المتوفرة في هذا القسم.
+          </p>
         </div>
 
         <div class="projects-grid" id="projectsContainer"></div>
 
         <div class="empty-state" id="emptyState" hidden>
           <i class="fa-regular fa-folder-open"></i>
-          <h3>لا توجد أعمال في هذا التصنيف حالياً</h3>
-          <p>جرّبي اختيار تصنيف آخر.</p>
+
+          <h3>
+            لا توجد أعمال في هذا التصنيف حاليًا
+          </h3>
+
+          <p>
+            جرّبي اختيار تصنيف آخر.
+          </p>
         </div>
       </div>
     </section>
 
     <section class="testimonials-section" id="testimonials">
       <div class="testimonials-container">
-
         <div class="testimonials-header">
           <div class="testimonials-heading">
             <span class="section-label">
@@ -94,17 +111,18 @@
             </h2>
 
             <p>
-              نفخر بالعمل مع علامات تجارية متنوعة، ونسعى دائمًا لتقديم تجربة
-              احترافية ونتائج تتجاوز توقعات عملائنا.
+              نفخر بالعمل مع علامات تجارية متنوعة،
+              ونسعى دائمًا لتقديم تجربة احترافية
+              ونتائج تتجاوز توقعات عملائنا.
             </p>
           </div>
 
           <div class="testimonials-navigation">
-            <button class="testimonial-arrow" id="testimonialNext" type="button" aria-label="الرأي التالي">
+            <button class="testimonial-arrow" id="testimonialPrev" type="button" aria-label="الرأي السابق">
               <i class="fa-solid fa-arrow-right"></i>
             </button>
 
-            <button class="testimonial-arrow" id="testimonialPrev" type="button" aria-label="الرأي السابق">
+            <button class="testimonial-arrow" id="testimonialNext" type="button" aria-label="الرأي التالي">
               <i class="fa-solid fa-arrow-left"></i>
             </button>
           </div>
