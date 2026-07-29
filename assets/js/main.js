@@ -248,7 +248,6 @@ function renderCategoryShowcase() {
           style="--category-index: ${index}"
         >
           <div class="category-showcase-top">
-            <span>${escapeHtml(info.title)}</span>
 
             <i class="${escapeAttribute(info.icon)}"></i>
           </div>
@@ -329,7 +328,7 @@ function renderProjects(data) {
             </h2>
 
             <span class="project-tag">
-              ${escapeHtml(project.category)}
+              ${escapeHtml(project.subCategory)}
             </span>
 
             <p class="project-description">
