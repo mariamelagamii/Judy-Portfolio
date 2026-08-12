@@ -42,22 +42,22 @@
     "subCategory": "برو CSS ",
     "icon": "",
     "description": "متجر للذهب والسبائك بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر خام الوطن للذهب والمجوهرات
-. نوفر سبائك ذهبية معتمدة من مصانع عالمية PAMP",
+    "longDescription": " . نوفر سبائك ذهبية معتمدة من مصانع عالمية PAMP تم تصميم واجهة متجر خام الوطن للذهب والمجوهرات .",
     "image": "",
     "video": "",
     "website": "https://khamksa.com"
   },
   {
-    "id": "jasmine-care",
-    "name": "ياسمين كير",
+    "id": "nyazitoys",
+    "name": " العاب نيازي ",
     "category": " تصميم متاجر",
-    "subCategory": "اسم الثيم ",
-    "icon": "fa-solid fa-pump-soap",
-    "description": "متجر منتجات عناية شخصية وتجميل بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر ياسمين كير بألوان ناعمة تناسب مجال العناية والجمال، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
-    "image": "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=1200&q=85",
-    "website": "https://judymarketing.com"
+    "subCategory": "يافا ",
+    "icon": "",
+    "description": "متجر منتجات لمتجر نيازى للألعاب بتجربة تسوق سلسة وموثوقة.",
+    "longDescription": "تم تصميم واجهة متجر نيازى للألعاب والاسكوتر بألوان قويه تناسب الألعاب،  اكبر تشكيلة من الاسكوترات الكهربائية والدراجات الكهربائية وكذلك السيارات الكهربائية.",
+    "image": "",
+    "video": "",
+    "website": "https://nyazitoys.com/ar"
   },
   {
     "id": "jasmine-care",
@@ -154,7 +154,81 @@
     "video": "",
     "website": "https://akhtamjeddah.com"
   },
+  {
+    "id": "akhtamjeddah",
+    "name": "أختام جدة",
+    "category": " تصميم متاجر",
+    "subCategory": "ثيم سيليا ",
+    "icon": "",
+    "description": "متجر منتجات للأختام والأحبار بتجربة تسوق سلسة وموثوقة.",
+    "longDescription": "تم تصميم واجهة متجر أختام جدة للأختام والأحبار ، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
+    "image": "",
+    "video": "",
+    "website": "https://akhtamjeddah.com"
+  },
+  {
+    "id": "akhtamjeddah",
+    "name": "أختام جدة",
+    "category": " تصميم متاجر",
+    "subCategory": "ثيم سيليا ",
+    "icon": "",
+    "description": "متجر منتجات للأختام والأحبار بتجربة تسوق سلسة وموثوقة.",
+    "longDescription": "تم تصميم واجهة متجر أختام جدة للأختام والأحبار ، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
+    "image": "",
+    "video": "",
+    "website": "https://akhtamjeddah.com"
+  },
+  {
+    "id": "akhtamjeddah",
+    "name": "أختام جدة",
+    "category": " تصميم متاجر",
+    "subCategory": "ثيم سيليا ",
+    "icon": "",
+    "description": "متجر منتجات للأختام والأحبار بتجربة تسوق سلسة وموثوقة.",
+    "longDescription": "تم تصميم واجهة متجر أختام جدة للأختام والأحبار ، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
+    "image": "",
+    "video": "",
+    "website": "https://akhtamjeddah.com"
+  },
+  {
+    "id": "akhtamjeddah",
+    "name": "عذق وتمرة",
+    "category": " تصميم متاجر",
+    "subCategory": "ثيم سيليا ",
+    "icon": "",
+    "description": "متجر منتجات عذق وتمرة بتجربة تسوق سلسة وموثوقة.",
+    "longDescription": "تم تصميم واجهة متجر عذق وتمرة لأجود أنواع التمور المختارة بعناية .",
+    "image": "",
+    "video": "",
+    "website": "https://ethqwtamrh.com/"
+  },
+  {
+    "id": "wargear",
+    "name": "wargear لامة الحرب",
+    "category": " تصميم متاجر",
+    "subCategory": "ثيم سيليا ",
+    "icon": "",
+    "description": "متجر منتجات Wargear للمنتجات التكتيكية والحربية بتجربة تسوق سلسة وموثوقة.",
+    "longDescription": "تم تصميم واجهة متجر Wargear هو المكان الذي يجمع بين الشغف، المتعة، والاحتراف – هيا نبدأ رحلتنا معاً نحو اقتناء الأداة التي تُعبّر عنك.",
+    "image": "",
+    "video": "",
+    "website": "https://wargear.sa"
+  },
+  {
+    "id": "yaka.one",
+    "name": "ياكا ون",
+    "category": " تصميم متاجر",
+    "subCategory": "برو css ",
+    "icon": "",
+    "description": "متجر منتجات ياكا ون بتجربة تسوق سلسة وموثوقة.",
+    "longDescription": "تم تصميم واجهة متجر ياكا ون في بداية مميزة لحياة صحية جديدة، نمثل في ياكا ون الجسر المبتكر والعصري بينك وبين حياة أكثر صحة و سعادة.",
+    "image": "",
+    "video": "",
+    "website": "https://yaka.one/ar"
+  },
 
+
+  
 
 
 
