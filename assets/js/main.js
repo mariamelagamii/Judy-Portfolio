@@ -304,8 +304,9 @@ function renderProjects(data) {
           <a
             class="project-preview"
             href="${escapeAttribute(project.website || "#")}"
-            target="_blank"
-            rel="noopener"
+            data-project-preview
+            data-project-url="${escapeAttribute(project.website || "")}"
+            data-project-name="${escapeAttribute(project.name)}"
             aria-label="عرض مشروع ${escapeAttribute(project.name)}"
           >
             <img
@@ -316,7 +317,11 @@ function renderProjects(data) {
           </a>
 
           <div class="project-category-icon">
-            <img src="https://j.top4top.io/p_3876sqo641.png" alt="" aria-hidden="true">
+            <img
+              src="https://j.top4top.io/p_3876sqo641.png"
+              alt=""
+              aria-hidden="true"
+            >
           </div>
 
           <div class="project-content">
@@ -336,8 +341,9 @@ function renderProjects(data) {
               <a
                 class="project-link"
                 href="${escapeAttribute(project.website || "#")}"
-                target="_blank"
-                rel="noopener"
+                data-project-preview
+                data-project-url="${escapeAttribute(project.website || "")}"
+                data-project-name="${escapeAttribute(project.name)}"
               >
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
                 عرض الموقع
@@ -684,7 +690,283 @@ scrollBtn?.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+/* =========================
+   Project Preview Modal
+   ========================= */
 
+let projectModal = null;
+let projectModalContent = null;
+
+function createProjectModal() {
+  if (projectModal) return;
+
+  const modalStyle = document.createElement("style");
+
+  modalStyle.id = "project-preview-modal-style";
+
+  modalStyle.textContent = `
+    .project-preview-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 99999;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.72);
+      box-sizing: border-box;
+    }
+
+    .project-preview-modal.is-open {
+      display: flex;
+    }
+
+    .project-preview-modal__box {
+      position: relative;
+      width: min(1100px, 95vw);
+      height: min(700px, 90vh);
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+    }
+
+    .project-preview-modal__close {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      z-index: 2;
+      width: 42px;
+      height: 42px;
+      border: 0;
+      border-radius: 50%;
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      font-size: 22px;
+      line-height: 1;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .project-preview-modal__close:hover {
+      background: rgba(0, 0, 0, 0.85);
+    }
+
+    .project-preview-modal__content {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+      background: #fff;
+    }
+
+    .project-preview-modal__fallback {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 14px;
+      padding: 30px;
+      box-sizing: border-box;
+      text-align: center;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      .project-preview-modal {
+        padding: 10px;
+      }
+
+      .project-preview-modal__box {
+        width: 100%;
+        height: min(90vh, 650px);
+        border-radius: 12px;
+      }
+    }
+  `;
+
+  document.head.appendChild(modalStyle);
+
+  projectModal = document.createElement("div");
+
+  projectModal.className = "project-preview-modal";
+
+  projectModal.setAttribute("role", "dialog");
+  projectModal.setAttribute("aria-modal", "true");
+  projectModal.setAttribute("aria-label", "معاينة المشروع");
+
+  projectModal.innerHTML = `
+    <div class="project-preview-modal__box">
+
+      <button
+        type="button"
+        class="project-preview-modal__close"
+        aria-label="إغلاق"
+      >
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="project-preview-modal__content"></div>
+
+    </div>
+  `;
+
+  document.body.appendChild(projectModal);
+
+  projectModalContent = projectModal.querySelector(
+    ".project-preview-modal__content",
+  );
+
+  const closeButton = projectModal.querySelector(
+    ".project-preview-modal__close",
+  );
+
+  closeButton.addEventListener("click", closeProjectModal);
+
+  projectModal.addEventListener("click", (event) => {
+    if (event.target === projectModal) {
+      closeProjectModal();
+    }
+  });
+}
+
+/* =========================
+   تحويل روابط الفيديو
+   ========================= */
+
+function normalizeProjectUrl(url) {
+  if (!url) return "";
+
+  const trimmedUrl = String(url).trim();
+
+  /* YouTube */
+
+  const youtubeMatch = trimmedUrl.match(
+    /(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([\w-]{11})/i,
+  );
+
+  if (youtubeMatch?.[1]) {
+    return `https://www.youtube.com/embed/${youtubeMatch[1]}?autoplay=1&rel=0`;
+  }
+
+  /* Vimeo */
+
+  const vimeoMatch = trimmedUrl.match(/vimeo\.com\/(?:video\/)?(\d+)/i);
+
+  if (vimeoMatch?.[1]) {
+    return `https://player.vimeo.com/video/${vimeoMatch[1]}?autoplay=1`;
+  }
+
+  return trimmedUrl;
+}
+
+/* =========================
+   فتح الـ Modal
+   ========================= */
+
+function openProjectModal(url, projectName = "المشروع") {
+  createProjectModal();
+
+  const projectUrl = normalizeProjectUrl(url);
+
+  if (!projectUrl) {
+    projectModalContent.innerHTML = `
+      <div class="project-preview-modal__fallback">
+        <strong>
+          لا يوجد رابط للمعاينة لهذا المشروع.
+        </strong>
+      </div>
+    `;
+  } else {
+    /* فيديو مباشر */
+
+    const isDirectVideo = /\.(mp4|webm|ogg)(?:\?.*)?$/i.test(projectUrl);
+
+    if (isDirectVideo) {
+      projectModalContent.innerHTML = `
+        <video
+          class="project-preview-modal__content"
+          src="${escapeAttribute(projectUrl)}"
+          controls
+          autoplay
+          playsinline
+          title="${escapeAttribute(projectName)}"
+        ></video>
+      `;
+    } else {
+      /* الموقع / YouTube / Vimeo */
+
+      projectModalContent.innerHTML = `
+        <iframe
+          class="project-preview-modal__content"
+          src="${escapeAttribute(projectUrl)}"
+          title="${escapeAttribute(projectName)}"
+          allow="autoplay; fullscreen; picture-in-picture"
+          allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      `;
+    }
+  }
+
+  projectModal.classList.add("is-open");
+
+  document.body.style.overflow = "hidden";
+
+  const closeButton = projectModal.querySelector(
+    ".project-preview-modal__close",
+  );
+
+  closeButton?.focus();
+}
+
+/* =========================
+   إغلاق الـ Modal
+   ========================= */
+
+function closeProjectModal() {
+  if (!projectModal) return;
+
+  projectModal.classList.remove("is-open");
+
+  document.body.style.overflow = "";
+
+  if (projectModalContent) {
+    projectModalContent.innerHTML = "";
+  }
+}
+
+/* =========================
+   الضغط على الصورة أو عرض الموقع
+   ========================= */
+
+document.addEventListener("click", (event) => {
+  const trigger = event.target.closest("[data-project-preview]");
+
+  if (!trigger) return;
+
+  event.preventDefault();
+  event.stopPropagation();
+
+  openProjectModal(
+    trigger.dataset.projectUrl,
+    trigger.dataset.projectName || "المشروع",
+  );
+});
+
+/* =========================
+   إغلاق بـ ESC
+   ========================= */
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && projectModal?.classList.contains("is-open")) {
+    closeProjectModal();
+  }
+});
 /* =========================
    Initial loading
 ========================= */
