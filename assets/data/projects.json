@@ -60,16 +60,16 @@
     "website": "https://nyazitoys.com/ar"
   },
   {
-    "id": "jasmine-care",
-    "name": "جاسمين كير",
+    "id": "negma-ksa",
+    "name": "نجمة",
     "category": " تصميم متاجر",
     "subCategory": "ثيم سيليا",
-    "icon": "https://c.top4top.io/p_38691zzfd1.png",
-    "description": "متجر منتجات عناية شخصية وتجميل بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر ياسمين كير بألوان ناعمة تناسب مجال العناية والجمال، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
-    "image": "https://i.top4top.io/p_387598u931.png",
-    "video": "https://h.top4top.io/m_3875mq5221.mp4",
-    "website": "https://jasminecare.sa"
+    "icon": "",
+    "description": "متجر نجمة منتجات بطانيات الأطفال بتجربة تسوق سلسة وموثوقة.",
+    "longDescription": "تم تصميم واجهة متجر نجمة بألوان ناعمة تناسب مجال الاطفال، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
+    "image": "",
+    "video": "",
+    "website": "https://negma-ksa.com"
   },
   {
     "id": "hikvision",
@@ -165,7 +165,19 @@
     "image": "",
     "video": "",
     "website": "https://akhtamjeddah.com"
-  },
+  }, 
+  {
+    "id": "akraluxury",
+    "name": "أكرا للذهب والمجوهرات",
+    "category": " تصميم متاجر",
+    "subCategory": "ثيم سيليا ",
+    "icon": "",
+    "description": "متجر أكرا منتجات للذهب والأكسسوارات بتجربة تسوق سلسة وموثوقة.",
+    "longDescription": "تم تصميم واجهة متجر أكرا … رؤية وُلدت من شغف بالذهب، وجُمعت فيها الفخامة مع الثقة.",
+    "image": "",
+    "video": "",
+    "website": "https://akraluxury.com/"
+  }, 
   {
     "id": "akhtamjeddah",
     "name": "أختام جدة",
@@ -177,6 +189,42 @@
     "image": "",
     "video": "",
     "website": "https://akhtamjeddah.com"
+  }, 
+  {
+    "id": "akhtamjeddah",
+    "name": "أختام جدة",
+    "category": " تصميم متاجر",
+    "subCategory": "ثيم سيليا ",
+    "icon": "",
+    "description": "متجر منتجات للأختام والأحبار بتجربة تسوق سلسة وموثوقة.",
+    "longDescription": "تم تصميم واجهة متجر أختام جدة للأختام والأحبار ، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
+    "image": "",
+    "video": "",
+    "website": "https://akhtamjeddah.com"
+  },  
+  {
+    "id": "akhtamjeddah",
+    "name": "أختام جدة",
+    "category": " تصميم متاجر",
+    "subCategory": "ثيم سيليا ",
+    "icon": "",
+    "description": "متجر منتجات للأختام والأحبار بتجربة تسوق سلسة وموثوقة.",
+    "longDescription": "تم تصميم واجهة متجر أختام جدة للأختام والأحبار ، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
+    "image": "",
+    "video": "",
+    "website": "https://akhtamjeddah.com"
+  },
+  {
+    "id": "asia-family",
+    "name": "عائلة آسيا",
+    "category": " تصميم متاجر",
+    "subCategory": "ثيم ماركت ",
+    "icon": "",
+    "description": "متجر منتجات Asia Family بتجربة تسوق سلسة وموثوقة.",
+    "longDescription": "تم تصميم واجهة متجر عائلة آسيا | Asia Family ، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
+    "image": "",
+    "video": "",
+    "website": "https://asia-family.com"
   },
   {
     "id": "busaadstore",
