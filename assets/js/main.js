@@ -168,7 +168,6 @@ async function loadProjects() {
         <div class="projects-error">
           <i class="fa-solid fa-triangle-exclamation"></i>
           <h3>تعذر تحميل المشاريع</h3>
-          <p>تأكدي من مسار ملف projects.json.</p>
         </div>
       `;
     }
@@ -317,9 +316,7 @@ function renderProjects(data) {
           </a>
 
           <div class="project-category-icon">
-            <i class="${escapeAttribute(
-              project.icon || "fa-solid fa-store",
-            )}"></i>
+            <img src="https://j.top4top.io/p_3876sqo641.png" alt="" aria-hidden="true">
           </div>
 
           <div class="project-content">

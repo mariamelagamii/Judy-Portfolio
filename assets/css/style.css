@@ -761,11 +761,8 @@ img {
   border-radius: 50%;
   position: relative;
   z-index: 2;
-  background: rgba(255, 255, 255, 0.96);
-  border: 1px solid #e1e4fb;
   color: var(--primary);
   font-size: 20px;
-  box-shadow: 0 8px 25px rgba(72, 77, 145, 0.13);
 }
 
 .project-content {

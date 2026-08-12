@@ -4,47 +4,35 @@
     "name": "جاسمين كير",
     "category": " تصميم متاجر",
     "subCategory": "ثيم سيليا",
-    "icon": "https://c.top4top.io/p_38691zzfd1.png",
     "description": "متجر منتجات عناية شخصية وتجميل بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر ياسمين كير بألوان ناعمة تناسب مجال العناية والجمال، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
     "image": "https://i.top4top.io/p_387598u931.png",
     "website": "https://h.top4top.io/m_3875mq5221.mp4"
-    "website": "https://jasminecare.sa"
   },
   {
     "id": "hikvision",
     "name": "hikvision هيك فيجن",
     "category": " تصميم متاجر",
     "subCategory": "css",
-    "icon": "https://c.top4top.io/p_38691zzfd1.png",
     "description": "متجر hikvision متخصصة في بيع أنظمة وكاميرات المراقبة والحلول الأمنية المتكاملة.",
-    "longDescription": "تم تصميم واجهة متجر hikvision بألوان وهوية المتجر كبراند عالمي، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
     "image": "https://k.top4top.io/p_3875uqqc81.png",
-    "video": "https://h.top4top.io/m_3875mq5221.mp4",
-    "website": "https://hikvisionsaudi.com/ar"
+    "website": "https://h.top4top.io/m_3875mq5221.mp4"
   },
   {
     "id": "car-edition",
     "name": "كارايديشن",
     "category": " تصميم متاجر",
     "subCategory": "برو css",
-    "icon": "",
     "description": "متجر متخصص فى مستلزمات السيارات بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر كارايديشن للسيارات بألوان تناسب مجال السيارات، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
     "image": "https://f.top4top.io/p_3875xcheh1.png",
-    "video": "https://a.top4top.io/m_3875nh9b01.mp4",
-    "website": "https://car-edition.com"
+    "website": "https://a.top4top.io/m_3875nh9b01.mp4"
   },
   {
     "id": "khamksa",
     "name": "خام الوطن",
     "category": " تصميم متاجر",
     "subCategory": "برو CSS ",
-    "icon": "",
     "description": "متجر للذهب والسبائك بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": " . نوفر سبائك ذهبية معتمدة من مصانع عالمية PAMP تم تصميم واجهة متجر خام الوطن للذهب والمجوهرات .",
     "image": "",
-    "video": "",
     "website": "https://khamksa.com"
   },
   {
@@ -52,11 +40,8 @@
     "name": " العاب نيازي ",
     "category": " تصميم متاجر",
     "subCategory": "يافا ",
-    "icon": "",
     "description": "متجر منتجات لمتجر نيازى للألعاب بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر نيازى للألعاب والاسكوتر بألوان قويه تناسب الألعاب،  اكبر تشكيلة من الاسكوترات الكهربائية والدراجات الكهربائية وكذلك السيارات الكهربائية.",
     "image": "",
-    "video": "",
     "website": "https://nyazitoys.com/ar"
   },
   {
@@ -64,11 +49,8 @@
     "name": "نجمة",
     "category": " تصميم متاجر",
     "subCategory": "ثيم سيليا",
-    "icon": "",
     "description": "متجر نجمة منتجات بطانيات الأطفال بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر نجمة بألوان ناعمة تناسب مجال الاطفال، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
     "image": "",
-    "video": "",
     "website": "https://negma-ksa.com"
   },
   {
@@ -76,23 +58,17 @@
     "name": "hikvision هيك فيجن",
     "category": " تصميم متاجر",
     "subCategory": "css",
-    "icon": "https://c.top4top.io/p_38691zzfd1.png",
     "description": "متجر hikvision متخصصة في بيع أنظمة وكاميرات المراقبة والحلول الأمنية المتكاملة.",
-    "longDescription": "تم تصميم واجهة متجر hikvision بألوان وهوية المتجر كبراند عالمي، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
     "image": "https://k.top4top.io/p_3875uqqc81.png",
-    "video": "https://h.top4top.io/m_3875mq5221.mp4",
-    "website": "https://hikvisionsaudi.com/ar"
+    "website": "https://h.top4top.io/m_3875mq5221.mp4"
   },
   {
     "id": "manahil-almahmood",
     "name": "مناحل المحمود",
     "category": " تصميم متاجر",
     "subCategory": "برو css",
-    "icon": "",
     "description": "متجر متخصص فى العسل الطبيعي بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر مناحل المحمود بألوان تناسب مجال العسل، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
     "image": "",
-    "video": "",
     "website": "https://salla.sa/manahil-almahmood"
   },
   {
@@ -100,9 +76,7 @@
     "name": "ياسمين كير",
     "category": " تصميم متاجر",
     "subCategory": "برو CSS ",
-    "icon": "fa-solid fa-pump-soap",
     "description": "متجر منتجات عناية شخصية وتجميل بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر ياسمين كير بألوان ناعمة تناسب مجال العناية والجمال، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
     "image": "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=1200&q=85",
     "website": "https://car-edition.com/"
   },
@@ -111,11 +85,8 @@
     "name": "شاها للعبايات",
     "category": " تصميم متاجر",
     "subCategory": "ثيم سيليا",
-    "icon": "https://c.top4top.io/p_38691zzfd1.png",
     "description": "متجر للعبايات بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر شاها للعبايات بألوان قوية تناسب العبايات، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
     "image": "",
-    "video": "",
     "website": "https://shaha1.com"
   },
   {
@@ -123,11 +94,8 @@
     "name": "mlnlab",
     "category": " تصميم متاجر",
     "subCategory": "css",
-    "icon": "https://c.top4top.io/p_38691zzfd1.png",
     "description": "mlnlab متجر متخصص فى أجود أنواع البن المختص",
-    "longDescription": "تم تصميم واجهة متجر mlnlab بألوان وهوية المتجر كبراند مميز للقهوة ، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
     "image": "",
-    "video": "",
     "website": "https://mlnlab.com"
   },
   {
@@ -135,11 +103,8 @@
     "name": "smatcobox",
     "category": " تصميم متاجر",
     "subCategory": "سيليا و css",
-    "icon": "",
     "description": "متجر متخصص فى تصميم وتنفيذ البوكسات الفاخرة المصنوعة من الجلد الإيطالي،.",
-    "longDescription": "تم تصميم واجهة smatcobox. متجر متخصص في تصميم وتنفيذ البوكسات الفاخرة المصنوعة من الجلد الإيطالي، بتفاصيل راقية تعكس قيمة الهدية المميز",
     "image": "",
-    "video": "",
     "website": "https://smatcobox.com"
   },
   {
@@ -147,11 +112,8 @@
     "name": "أختام جدة",
     "category": " تصميم متاجر",
     "subCategory": "ثيم سيليا ",
-    "icon": "",
     "description": "متجر منتجات للأختام والأحبار بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر أختام جدة للأختام والأحبار ، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
     "image": "",
-    "video": "",
     "website": "https://akhtamjeddah.com"
   },
   {
@@ -159,59 +121,43 @@
     "name": "أختام جدة",
     "category": " تصميم متاجر",
     "subCategory": "ثيم سيليا ",
-    "icon": "",
     "description": "متجر منتجات للأختام والأحبار بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر أختام جدة للأختام والأحبار ، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
     "image": "",
-    "video": "",
     "website": "https://akhtamjeddah.com"
-  }, 
+  },
   {
     "id": "akraluxury",
     "name": "أكرا للذهب والمجوهرات",
     "category": " تصميم متاجر",
     "subCategory": "ثيم سيليا ",
-    "icon": "",
     "description": "متجر أكرا منتجات للذهب والأكسسوارات بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر أكرا … رؤية وُلدت من شغف بالذهب، وجُمعت فيها الفخامة مع الثقة.",
-    "image": "",
-    "video": "",
     "website": "https://akraluxury.com/"
-  }, 
+  },
   {
     "id": "akhtamjeddah",
     "name": "أختام جدة",
     "category": " تصميم متاجر",
     "subCategory": "ثيم سيليا ",
-    "icon": "",
     "description": "متجر منتجات للأختام والأحبار بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر أختام جدة للأختام والأحبار ، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
     "image": "",
-    "video": "",
     "website": "https://akhtamjeddah.com"
-  }, 
+  },
   {
     "id": "akhtamjeddah",
     "name": "أختام جدة",
     "category": " تصميم متاجر",
     "subCategory": "ثيم سيليا ",
-    "icon": "",
     "description": "متجر منتجات للأختام والأحبار بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر أختام جدة للأختام والأحبار ، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
     "image": "",
-    "video": "",
     "website": "https://akhtamjeddah.com"
-  },  
+  },
   {
     "id": "akhtamjeddah",
     "name": "أختام جدة",
     "category": " تصميم متاجر",
     "subCategory": "ثيم سيليا ",
-    "icon": "",
     "description": "متجر منتجات للأختام والأحبار بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر أختام جدة للأختام والأحبار ، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
     "image": "",
-    "video": "",
     "website": "https://akhtamjeddah.com"
   },
   {
@@ -219,11 +165,8 @@
     "name": "عائلة آسيا",
     "category": " تصميم متاجر",
     "subCategory": "ثيم ماركت ",
-    "icon": "",
     "description": "متجر منتجات Asia Family بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر عائلة آسيا | Asia Family ، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
     "image": "",
-    "video": "",
     "website": "https://asia-family.com"
   },
   {
@@ -231,11 +174,8 @@
     "name": "بوسعد للبلاستيك",
     "category": " تصميم متاجر",
     "subCategory": "css ",
-    "icon": "",
     "description": "متجر منتجات للاكواب والبلاستيك بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر بوسعد للبلاستيك والأكواب ، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
     "image": "",
-    "video": "",
     "website": "https://busaadstore.com/"
   },
   {
@@ -243,11 +183,7 @@
     "name": "عذق وتمرة",
     "category": " تصميم متاجر",
     "subCategory": "ثيم سيليا ",
-    "icon": "",
     "description": "متجر منتجات عذق وتمرة بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر عذق وتمرة لأجود أنواع التمور المختارة بعناية .",
-    "image": "",
-    "video": "",
     "website": "https://ethqwtamrh.com/"
   },
   {
@@ -255,11 +191,8 @@
     "name": "wargear لامة الحرب",
     "category": " تصميم متاجر",
     "subCategory": "ثيم سيليا ",
-    "icon": "",
     "description": "متجر منتجات Wargear للمنتجات التكتيكية والحربية بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر Wargear هو المكان الذي يجمع بين الشغف، المتعة، والاحتراف – هيا نبدأ رحلتنا معاً نحو اقتناء الأداة التي تُعبّر عنك.",
     "image": "",
-    "video": "",
     "website": "https://wargear.sa"
   },
   {
@@ -267,29 +200,17 @@
     "name": "ياكا ون",
     "category": " تصميم متاجر",
     "subCategory": "برو css ",
-    "icon": "",
     "description": "متجر منتجات ياكا ون بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر ياكا ون في بداية مميزة لحياة صحية جديدة، نمثل في ياكا ون الجسر المبتكر والعصري بينك وبين حياة أكثر صحة و سعادة.",
     "image": "",
-    "video": "",
     "website": "https://yaka.one/ar"
   },
 
-
-  
-
-
-
-
-  
   {
     "id": "smatcobox",
     "name": "مسباح الملقا",
     "category": "الجرافيك والفيديو",
     "subCategory": "تصميم سوشال ميديا",
-    "icon": "fa-solid fa-gem",
     "description": "متجر لبيع المسابيح والإكسسوارات الرجالية بهوية راقية وسهلة الاستخدام.",
-    "longDescription": "تجربة متجر فاخرة تعتمد على صور المنتجات الكبيرة والتصنيفات الواضحة، مع ألوان محايدة تبرز تفاصيل المسابيح والهدايا.",
     "image": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1200&q=85",
     "website": "https://smatcobox.com"
   },
@@ -298,9 +219,7 @@
     "name": "الجازي بوتيك",
     "category": "إدارة حسابات السوشال",
     "subCategory": "إدارة حسابات السوشال",
-    "icon": "fa-solid fa-bag-shopping",
     "description": "متجر متخصص في الحقائب النسائية بتصميم عصري وتجربة تسوق فاخرة.",
-    "longDescription": "تم بناء الهوية الرقمية للمتجر حول طابع أنيق وفخم، مع بطاقات منتجات واضحة ومساحات بصرية تساعد العميلة على التركيز على تفاصيل الحقائب.",
     "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=85",
     "website": "https://judymarketing.com"
   },
@@ -309,9 +228,7 @@
     "name": "أختام جدة",
     "category": "خدمات السيو SEO",
     "subCategory": "تحسين محركات البحث",
-    "icon": "fa-solid fa-stamp",
     "description": "متجر أختام ومستلزمات مكتبية بجودة عالية وتصميم احترافي واضح.",
-    "longDescription": "واجهة عملية تركز على سهولة الوصول إلى أنواع الأختام والخدمات، مع عرض الخبرة والجودة وخيارات التواصل والطلب بصورة مباشرة.",
     "image": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=85",
     "website": "https://judymarketing.com"
   },
@@ -320,9 +237,7 @@
     "name": "إيزي بوكس",
     "category": "الحملات الإعلانية",
     "subCategory": "الحملات الإعلانية",
-    "icon": "fa-solid fa-box-open",
     "description": "متجر للخدمات الذكية وخزائن الاستلام بتقنيات حديثة وموثوقة.",
-    "longDescription": "تصميم تقني بسيط يوضح حلول الخزائن الذكية والاستخدامات المختلفة، مع إبراز المواصفات والمميزات وخيارات الطلب.",
     "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=85",
     "website": "https://judymarketing.com"
   },
@@ -331,9 +246,7 @@
     "name": "سمارت كول",
     "category": "الخدمات الحكومية",
     "subCategory": "استخراج وثيقة",
-    "icon": "fa-solid fa-snowflake",
     "description": "متجر أجهزة تبريد وتكييف مع خيارات دفع متعددة وتوصيل سريع.",
-    "longDescription": "هوية بصرية باردة وواضحة تناسب منتجات التكييف والتبريد، مع تنظيم الأقسام والعروض لتسهيل المقارنة والشراء.",
     "image": "https://images.unsplash.com/photo-1631545806609-15d2e35443c5?auto=format&fit=crop&w=1200&q=85",
     "website": "https://judymarketing.com"
   },
@@ -342,10 +255,7 @@
     "name": "رؤية للمناديل",
     "category": "الجرافيك والفيديو",
     "subCategory": "UGC",
-    "icon": "fa-solid fa-box-tissue",
     "description": "متجر مناديل ومنتجات منزلية بجودة عالية وأسعار مناسبة.",
-    "longDescription": "واجهة نظيفة بألوان زرقاء هادئة، مع عرض مباشر للمنتجات والمميزات وخيارات الطلب والتوصيل.",
-    "image": "https://images.unsplash.com/photo-1583947215259-38e31be8751f?auto=format&fit=crop&w=1200&q=85",
     "website": "https://judymarketing.com"
   },
   {
@@ -353,9 +263,7 @@
     "name": "M&H فاشن",
     "category": "الجرافيك والفيديو",
     "subCategory": "تصوير لايف ",
-    "icon": "fa-solid fa-person-dress",
     "description": "متجر فساتين نسائية بتصميم أنيق وتجربة تسوق تليق بذوقك.",
-    "longDescription": "تصميم أنثوي فاتح يبرز الفساتين والتصنيفات ويخلق تجربة راقية، مع دعوات شراء واضحة ومحتوى مختصر.",
     "image": "https://images.unsplash.com/photo-1566174053879-31528523f8ae?auto=format&fit=crop&w=1200&q=85",
     "website": "https://judymarketing.com"
   },
@@ -364,9 +272,7 @@
     "name": "أفكار للكتب",
     "category": "الجرافيك والفيديو",
     "subCategory": "AI",
-    "icon": "fa-solid fa-book-open",
     "description": "متجر كتب وروايات متنوعة بتصميم بسيط وتجربة قراءة مريحة.",
-    "longDescription": "تم اختيار طابع بصري هادئ يميل إلى الأزرق الداكن والرمادي، مع إبراز أقسام الروايات وتطوير الذات والكتب الأكثر طلباً.",
     "image": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=1200&q=85",
     "website": "https://judymarketing.com"
   }
