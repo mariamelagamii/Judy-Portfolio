@@ -36,15 +36,17 @@
     "website": "https://car-edition.com"
   },
   {
-    "id": "jasmine-care",
-    "name": "ياسمين كير",
+    "id": "khamksa",
+    "name": "خام الوطن",
     "category": " تصميم متاجر",
     "subCategory": "برو CSS ",
-    "icon": "fa-solid fa-pump-soap",
-    "description": "متجر منتجات عناية شخصية وتجميل بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر ياسمين كير بألوان ناعمة تناسب مجال العناية والجمال، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
-    "image": "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=1200&q=85",
-    "website": "https://car-edition.com/"
+    "icon": "",
+    "description": "متجر للذهب والسبائك بتجربة تسوق سلسة وموثوقة.",
+    "longDescription": "تم تصميم واجهة متجر خام الوطن للذهب والمجوهرات
+. نوفر سبائك ذهبية معتمدة من مصانع عالمية PAMP",
+    "image": "",
+    "video": "",
+    "website": "https://khamksa.com"
   },
   {
     "id": "jasmine-care",
@@ -82,16 +84,16 @@
     "website": "https://hikvisionsaudi.com/ar"
   },
   {
-    "id": "car-edition",
-    "name": "كارايديشن",
+    "id": "manahil-almahmood",
+    "name": "مناحل المحمود",
     "category": " تصميم متاجر",
     "subCategory": "برو css",
     "icon": "",
-    "description": "متجر متخصص فى مستلزمات السيارات بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر كارايديشن للسيارات بألوان تناسب مجال السيارات، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
-    "image": "https://f.top4top.io/p_3875xcheh1.png",
-    "video": "https://a.top4top.io/m_3875nh9b01.mp4",
-    "website": "https://car-edition.com"
+    "description": "متجر متخصص فى العسل الطبيعي بتجربة تسوق سلسة وموثوقة.",
+    "longDescription": "تم تصميم واجهة متجر مناحل المحمود بألوان تناسب مجال العسل، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
+    "image": "",
+    "video": "",
+    "website": "https://salla.sa/manahil-almahmood"
   },
   {
     "id": "jasmine-care",
