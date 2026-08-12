@@ -105,54 +105,61 @@
     "website": "https://car-edition.com/"
   },
   {
-    "id": "jasmine-care",
-    "name": "جاسمين كير",
+    "id": "shaha",
+    "name": "شاها للعبايات",
     "category": " تصميم متاجر",
     "subCategory": "ثيم سيليا",
     "icon": "https://c.top4top.io/p_38691zzfd1.png",
-    "description": "متجر منتجات عناية شخصية وتجميل بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر ياسمين كير بألوان ناعمة تناسب مجال العناية والجمال، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
-    "image": "https://i.top4top.io/p_387598u931.png",
-    "video": "https://h.top4top.io/m_3875mq5221.mp4",
-    "website": "https://jasminecare.sa"
+    "description": "متجر للعبايات بتجربة تسوق سلسة وموثوقة.",
+    "longDescription": "تم تصميم واجهة متجر شاها للعبايات بألوان قوية تناسب العبايات، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
+    "image": "",
+    "video": "",
+    "website": "https://shaha1.com"
   },
   {
-    "id": "hikvision",
-    "name": "hikvision هيك فيجن",
+    "id": "mlnlab",
+    "name": "mlnlab",
     "category": " تصميم متاجر",
     "subCategory": "css",
     "icon": "https://c.top4top.io/p_38691zzfd1.png",
-    "description": "متجر hikvision متخصصة في بيع أنظمة وكاميرات المراقبة والحلول الأمنية المتكاملة.",
-    "longDescription": "تم تصميم واجهة متجر hikvision بألوان وهوية المتجر كبراند عالمي، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
-    "image": "https://k.top4top.io/p_3875uqqc81.png",
-    "video": "https://h.top4top.io/m_3875mq5221.mp4",
-    "website": "https://hikvisionsaudi.com/ar"
+    "description": "mlnlab متجر متخصص فى أجود أنواع البن المختص",
+    "longDescription": "تم تصميم واجهة متجر mlnlab بألوان وهوية المتجر كبراند مميز للقهوة ، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
+    "image": "",
+    "video": "",
+    "website": "https://mlnlab.com"
   },
   {
-    "id": "car-edition",
-    "name": "كارايديشن",
+    "id": "smatcobox",
+    "name": "smatcobox",
     "category": " تصميم متاجر",
-    "subCategory": "برو css",
+    "subCategory": "سيليا و css",
     "icon": "",
-    "description": "متجر متخصص فى مستلزمات السيارات بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر كارايديشن للسيارات بألوان تناسب مجال السيارات، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
-    "image": "https://f.top4top.io/p_3875xcheh1.png",
-    "video": "https://a.top4top.io/m_3875nh9b01.mp4",
-    "website": "https://car-edition.com"
+    "description": "متجر متخصص فى تصميم وتنفيذ البوكسات الفاخرة المصنوعة من الجلد الإيطالي،.",
+    "longDescription": "تم تصميم واجهة smatcobox. متجر متخصص في تصميم وتنفيذ البوكسات الفاخرة المصنوعة من الجلد الإيطالي، بتفاصيل راقية تعكس قيمة الهدية المميز",
+    "image": "",
+    "video": "",
+    "website": "https://smatcobox.com"
   },
   {
-    "id": "jasmine-care",
-    "name": "ياسمين كير",
+    "id": "akhtamjeddah",
+    "name": "أختام جدة",
     "category": " تصميم متاجر",
-    "subCategory": "برو CSS ",
-    "icon": "fa-solid fa-pump-soap",
-    "description": "متجر منتجات عناية شخصية وتجميل بتجربة تسوق سلسة وموثوقة.",
-    "longDescription": "تم تصميم واجهة متجر ياسمين كير بألوان ناعمة تناسب مجال العناية والجمال، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
-    "image": "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=1200&q=85",
-    "website": "https://car-edition.com/"
+    "subCategory": "ثيم سيليا ",
+    "icon": "",
+    "description": "متجر منتجات للأختام والأحبار بتجربة تسوق سلسة وموثوقة.",
+    "longDescription": "تم تصميم واجهة متجر أختام جدة للأختام والأحبار ، مع إبراز الأقسام والمنتجات والعروض بطريقة واضحة وسهلة التصفح.",
+    "image": "",
+    "video": "",
+    "website": "https://akhtamjeddah.com"
   },
+
+
+
+
+
+  
   {
-    "id": "melqa-misbah",
+    "id": "smatcobox",
     "name": "مسباح الملقا",
     "category": "الجرافيك والفيديو",
     "subCategory": "تصميم سوشال ميديا",
@@ -160,7 +167,7 @@
     "description": "متجر لبيع المسابيح والإكسسوارات الرجالية بهوية راقية وسهلة الاستخدام.",
     "longDescription": "تجربة متجر فاخرة تعتمد على صور المنتجات الكبيرة والتصنيفات الواضحة، مع ألوان محايدة تبرز تفاصيل المسابيح والهدايا.",
     "image": "https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1200&q=85",
-    "website": "https://judymarketing.com"
+    "website": "https://smatcobox.com"
   },
   {
     "id": "aljazi",
