@@ -16,6 +16,106 @@
 </head>
 
 <body>
+  <div id="judy-store-quiz" dir="rtl" aria-live="polite">
+    <button class="jsq-launcher" type="button" aria-label="افتح مساعد اختيار خدمة المتجر">
+      <span class="jsq-launcher-avatar">
+        <img src="https://c.top4top.io/p_38788dhhg1.png" alt="Judy Marketing">
+      </span>
+      <span class="jsq-launcher-copy">
+        <strong>وش يحتاج متجرك؟</strong>
+        <small>خلّنا نساعدك نحدد الخدمة المناسبة</small>
+      </span>
+    </button>
+
+    <div class="jsq-overlay" hidden></div>
+
+    <section class="jsq-modal" role="dialog" aria-modal="true" aria-labelledby="jsq-title" hidden>
+      <button class="jsq-close" type="button" aria-label="إغلاق">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="jsq-brand">
+        <span class="jsq-brand-mark"><img src="https://l.top4top.io/p_3878pfv4o1.png" alt=""></span>
+        <span>JUDY MARKETING</span>
+      </div>
+
+      <div class="jsq-progress">
+        <span></span>
+      </div>
+
+      <div class="jsq-content">
+        <div class="jsq-intro jsq-step is-active" data-step="intro">
+          <div class="jsq-sparkle"><img src="https://c.top4top.io/p_38788dhhg1.png" alt="Judy Marketing"></div>
+          <p class="jsq-kicker">مساعد Judy الذكي</p>
+          <h2 id="jsq-title">خلنا نكتشف احتياج متجرك</h2>
+          <p>
+            جاوب على 3 أسئلة سريعة، وبناءً على إجاباتك نحدد لك الخدمة الأقرب لاحتياج متجرك.
+          </p>
+          <button class="jsq-primary" type="button" data-next="1">
+            ابدأ التقييم
+            <span>←</span>
+          </button>
+          <small>يستغرق أقل من 30 ثانية</small>
+        </div>
+
+        <div class="jsq-step" data-step="1">
+          <p class="jsq-kicker">السؤال الأول من 3</p>
+          <h2>وين وصل متجرك الآن؟</h2>
+          <p class="jsq-question-help">اختار الحالة الأقرب لوضع متجرك الحالي</p>
+          <div class="jsq-options">
+            <button type="button" data-answer="new">أبدأ متجري من الصفر</button>
+            <button type="button" data-answer="existing">عندي متجر وأبي أرتبه وأطوره</button>
+            <button type="button" data-answer="sales">متجري جاهز لكن مبيعاته ضعيفة</button>
+          </div>
+        </div>
+
+        <div class="jsq-step" data-step="2">
+          <p class="jsq-kicker">السؤال الثاني من 3</p>
+          <h2>وش أكثر شيء تحتاجه؟</h2>
+          <p class="jsq-question-help">اختار الاحتياج الذي تريد التركيز عليه أكثر</p>
+          <div class="jsq-options">
+            <button type="button" data-answer="design">تصميم واجهة احترافية للمتجر</button>
+            <button type="button" data-answer="content">محتوى ووصف منتجات مقنع</button>
+            <button type="button" data-answer="conversion">تحسين تجربة العميل وزيادة التحويل</button>
+            <button type="button" data-answer="seo">تحسين ظهور المتجر في محركات البحث SEO</button>
+          </div>
+        </div>
+
+        <div class="jsq-step" data-step="3">
+          <p class="jsq-kicker">السؤال الأخير</p>
+          <h2>ما الهدف الأهم لك حاليًا؟</h2>
+          <p class="jsq-question-help">آخر سؤال، وبعده نجهز لك ملخصًا ترسلينه مباشرة لفريق Judy</p>
+          <div class="jsq-options">
+            <button type="button" data-answer="launch">إطلاق متجر يليق بالعلامة</button>
+            <button type="button" data-answer="trust">زيادة الثقة والاحترافية</button>
+            <button type="button" data-answer="growth">زيادة الطلبات والمبيعات</button>
+            <button type="button" data-answer="visibility">الوصول لعملاء جدد</button>
+          </div>
+        </div>
+
+        <div class="jsq-result jsq-step" data-step="result">
+          <div class="jsq-result-icon"><i class="fa-solid fa-check"></i></div>
+          <p class="jsq-kicker">خلصنا، وهذه خلاصة احتياجك</p>
+          <h2 id="jsq-result-title"></h2>
+          <p id="jsq-result-text"></p>
+
+          <div class="jsq-result-list" id="jsq-result-list"></div>
+
+          <div class="jsq-summary" id="jsq-summary"></div>
+
+          <a class="jsq-primary jsq-whatsapp" id="jsq-whatsapp" target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i>
+            أرسل التفاصيل على واتساب
+            <span>←</span>
+          </a>
+
+          <button class="jsq-restart" type="button">إعادة التقييم</button>
+        </div>
+      </div>
+
+      <div class="jsq-footer">Judy Marketing · نصمم متاجر تُقنع وتبيع</div>
+    </section>
+  </div>
   <div class="top-banner">
     <span><i class="fa-solid fa-wand-magic-sparkles"></i> عندك متجر؟ خلينا نصممه ونسوقه لك</span>
     <a class="whatsapp-btn" href="https://wa.me/966552261549?text=مرحباً، أريد الاستفسار عن تصميم متجر إلكتروني"

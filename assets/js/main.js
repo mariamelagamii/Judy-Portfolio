@@ -967,6 +967,281 @@ document.addEventListener("keydown", (event) => {
     closeProjectModal();
   }
 });
+(function () {
+  "use strict";
+
+  /* رقم Judy بدون + أو مسافات */
+  const WHATSAPP = "966552261549";
+
+  const root = document.getElementById("judy-store-quiz");
+  if (!root) return;
+
+  const modal = root.querySelector(".jsq-modal");
+  const overlay = root.querySelector(".jsq-overlay");
+  const launcher = root.querySelector(".jsq-launcher");
+  const closeBtn = root.querySelector(".jsq-close");
+  const progress = root.querySelector(".jsq-progress span");
+  const whatsappBtn = root.querySelector("#jsq-whatsapp");
+  const summaryBox = root.querySelector("#jsq-summary");
+
+  const answers = {
+    stage: null,
+    need: null,
+    goal: null,
+  };
+
+  let currentStep = "intro";
+
+  const labels = {
+    stage: {
+      new: "أبدأ متجري من الصفر",
+      existing: "عندي متجر وأبي أرتّبه وأطوّره",
+      sales: "متجري جاهز لكن مبيعاته ضعيفة",
+    },
+    need: {
+      design: "تصميم واجهة احترافية للمتجر",
+      content: "محتوى ووصف منتجات مقنع",
+      conversion: "تحسين تجربة العميل وزيادة التحويل",
+      seo: "تحسين ظهور المتجر في محركات البحث SEO",
+    },
+    goal: {
+      launch: "إطلاق متجر يليق بالعلامة",
+      trust: "زيادة الثقة والاحترافية",
+      growth: "زيادة الطلبات والمبيعات",
+      visibility: "الوصول لعملاء جدد",
+    },
+  };
+
+  const results = {
+    new: {
+      title: "باقة إطلاق المتجر",
+      text: "أنت تحتاج بداية مرتبة تبني الثقة من أول زيارة.",
+      items: [
+        "تصميم متجر احترافي ومتجاوب",
+        "تنظيم الأقسام والصفحات الأساسية",
+        "تهيئة تجربة العميل للشراء",
+      ],
+    },
+    existing: {
+      title: "باقة تطوير وتحسين المتجر",
+      text: "متجرك يحتاج ترتيبًا بصريًا وتجربة أسهل وأكثر احترافية للعميل.",
+      items: [
+        "إعادة تصميم الواجهة",
+        "تحسين رحلة المستخدم",
+        "مراجعة الصفحات والعناصر المهمة",
+      ],
+    },
+    sales: {
+      title: "باقة رفع التحويل والمبيعات",
+      text: "الفرصة الأكبر عندك هي تحويل الزيارات الحالية إلى طلبات أكثر.",
+      items: [
+        "تحسين صفحات المنتجات",
+        "تقوية المحتوى والعروض",
+        "تحسين نقاط الإقناع وأزرار الشراء",
+      ],
+    },
+    design: {
+      title: "تصميم متجر احترافي",
+      text: "سنحوّل هوية علامتك إلى واجهة مرتبة تليق بمنتجاتك.",
+      items: [
+        "تصميم متجاوب للجوال",
+        "تنسيق الألوان والأقسام",
+        "واجهة واضحة وسهلة التصفح",
+      ],
+    },
+    content: {
+      title: "محتوى متجر يبيع",
+      text: "المحتوى المناسب يشرح القيمة ويقرّب العميل من قرار الشراء.",
+      items: [
+        "وصف منتجات مقنع",
+        "عناوين تسويقية واضحة",
+        "صياغة صفحات المتجر الأساسية",
+      ],
+    },
+    conversion: {
+      title: "تحسين تجربة العميل",
+      text: "سنراجع نقاط التردد ونبسط الطريق من التصفح إلى الشراء.",
+      items: [
+        "تحليل رحلة العميل",
+        "تحسين بنية الصفحات",
+        "تقوية نقاط الإقناع والدعوة للشراء",
+      ],
+    },
+    seo: {
+      title: "تهيئة المتجر لمحركات البحث",
+      text: "سنساعد متجرك على الظهور أمام العملاء الباحثين عن منتجاتك.",
+      items: [
+        "تحسين العناوين والأوصاف",
+        "تنظيم المحتوى والكلمات المفتاحية",
+        "تهيئة صفحات المنتجات",
+      ],
+    },
+    launch: {
+      title: "باقة إطلاق المتجر",
+      text: "الهدف واضح: متجر يترك انطباعًا احترافيًا من أول زيارة.",
+      items: [
+        "هوية وواجهة متناسقة",
+        "إعداد الصفحات المهمة",
+        "تجهيز المتجر للانطلاق",
+      ],
+    },
+    trust: {
+      title: "باقة بناء الثقة",
+      text: "سنقوّي حضور المتجر ونوضح للعميل لماذا يختارك.",
+      items: [
+        "تصميم أكثر احترافية",
+        "محتوى يجيب عن أسئلة العميل",
+        "إبراز المزايا وعناصر الثقة",
+      ],
+    },
+    growth: {
+      title: "باقة النمو والمبيعات",
+      text: "سنركّز على العناصر التي تساعدك على زيادة الطلبات.",
+      items: ["تحسين التحويل", "محتوى عروض وتسويق", "تجربة شراء أكثر سلاسة"],
+    },
+    visibility: {
+      title: "باقة الظهور والوصول",
+      text: "سنرتب المحتوى ليصل متجرك إلى عملاء جدد.",
+      items: [
+        "أساسيات SEO للمتجر",
+        "تحسين صفحات المنتجات",
+        "خطة محتوى قابلة للتنفيذ",
+      ],
+    },
+  };
+
+  function openQuiz() {
+    modal.hidden = false;
+    overlay.hidden = false;
+    document.body.style.overflow = "hidden";
+    showStep("intro");
+  }
+
+  function closeQuiz() {
+    modal.hidden = true;
+    overlay.hidden = true;
+    document.body.style.overflow = "";
+  }
+
+  function showStep(step) {
+    root.querySelectorAll(".jsq-step").forEach((el) => {
+      el.classList.remove("is-active");
+    });
+
+    const target = root.querySelector('[data-step="' + step + '"]');
+    if (target) target.classList.add("is-active");
+
+    currentStep = step;
+
+    const width =
+      step === "intro" ? 0 : step === "result" ? 100 : (Number(step) / 3) * 100;
+
+    progress.style.width = width + "%";
+  }
+
+  function getRecommendedResult() {
+    /*
+        الأولوية للحالة الحالية لأنها أهم مؤشر للخدمة.
+        وإذا لم توجد، نستخدم الاحتياج أو الهدف.
+      */
+    return (
+      results[answers.stage] ||
+      results[answers.need] ||
+      results[answers.goal] ||
+      results.existing
+    );
+  }
+
+  function buildWhatsAppMessage(result) {
+    return [
+      "مرحبًا Judy Marketing، أريد الاستفسار عن خدماتكم لمتجري.",
+      "",
+      "إجابات مساعد اختيار الخدمة:",
+      "1) حالة المتجر: " + (labels.stage[answers.stage] || "غير محدد"),
+      "2) الاحتياج الأساسي: " + (labels.need[answers.need] || "غير محدد"),
+      "3) الهدف الحالي: " + (labels.goal[answers.goal] || "غير محدد"),
+      "",
+      "الخدمة المقترحة: " + result.title,
+      "",
+      "أرغب بمعرفة التفاصيل والأسعار المناسبة لحالتي.",
+    ].join("\n");
+  }
+
+  function showResult() {
+    const result = getRecommendedResult();
+
+    root.querySelector("#jsq-result-title").textContent = result.title;
+    root.querySelector("#jsq-result-text").textContent = result.text;
+
+    root.querySelector("#jsq-result-list").innerHTML = result.items
+      .map((item) => "<div>" + escapeHtml(item) + "</div>")
+      .join("");
+
+    summaryBox.innerHTML = `
+      <strong>ملخص إجاباتك</strong><br>
+      حالة المتجر: ${escapeHtml(labels.stage[answers.stage] || "غير محدد")}<br>
+      الاحتياج: ${escapeHtml(labels.need[answers.need] || "غير محدد")}<br>
+      الهدف: ${escapeHtml(labels.goal[answers.goal] || "غير محدد")}
+    `;
+
+    const message = encodeURIComponent(buildWhatsAppMessage(result));
+
+    whatsappBtn.href = "https://wa.me/" + WHATSAPP + "?text=" + message;
+
+    showStep("result");
+  }
+
+  function escapeHtml(value) {
+    return String(value)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+  }
+
+  launcher.addEventListener("click", openQuiz);
+  closeBtn.addEventListener("click", closeQuiz);
+  overlay.addEventListener("click", closeQuiz);
+
+  root.querySelector('[data-next="1"]').addEventListener("click", function () {
+    showStep("1");
+  });
+
+  root.querySelectorAll(".jsq-options button").forEach((button) => {
+    button.addEventListener("click", function () {
+      if (currentStep === "1") {
+        answers.stage = this.dataset.answer;
+        showStep("2");
+        return;
+      }
+
+      if (currentStep === "2") {
+        answers.need = this.dataset.answer;
+        showStep("3");
+        return;
+      }
+
+      if (currentStep === "3") {
+        answers.goal = this.dataset.answer;
+        showResult();
+      }
+    });
+  });
+
+  root.querySelector(".jsq-restart").addEventListener("click", function () {
+    answers.stage = null;
+    answers.need = null;
+    answers.goal = null;
+    showStep("intro");
+  });
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && !modal.hidden) {
+      closeQuiz();
+    }
+  });
+})();
 /* =========================
    Initial loading
 ========================= */

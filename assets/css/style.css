@@ -1726,3 +1726,504 @@ img {
     grid-template-columns: 1fr;
   }
 }
+  #judy-store-quiz {
+    --jsq-primary: #5f63f2;
+    --jsq-primary-dark: #4d45d8;
+    --jsq-primary-light: #eef0ff;
+    --jsq-secondary: #6bbef2;
+    --jsq-accent: #cbb8ff;
+    --jsq-text: #1f2850;
+    --jsq-muted: #66708c;
+    --jsq-white: #fff;
+    --jsq-surface: #f8faff;
+    --jsq-border: #e5e8f5;
+    --jsq-shadow: 0 24px 70px rgba(45, 52, 120, .22);
+    position: relative;
+    z-index: 99999;
+    font-family: "Cairo", sans-serif;
+  }
+
+  #judy-store-quiz * {
+    box-sizing: border-box
+  }
+
+  .jsq-launcher {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 250px;
+    padding: 7px 10px 7px 8px;
+    border: 1px solid rgba(95, 99, 242, .16);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, .96);
+    color: var(--jsq-text);
+    font-family: inherit;
+    cursor: pointer;
+    box-shadow: 0 12px 35px rgba(50, 58, 130, .18);
+    backdrop-filter: blur(14px);
+    transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    animation: jsq-float 3.2s ease-in-out infinite;
+  }
+
+  .jsq-launcher:hover {
+    transform: translateY(-4px);
+    border-color: rgba(95, 99, 242, .35);
+    box-shadow: 0 18px 42px rgba(50, 58, 130, .24);
+    animation-play-state: paused;
+  }
+
+  .jsq-launcher-avatar {
+    flex: 0 0 60px;
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--jsq-primary), var(--jsq-secondary));
+    box-shadow: 0 4px 15px rgba(95, 99, 242, .28);
+  }
+
+  .jsq-launcher-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 5px;
+    background: #fff;
+  }
+
+  .jsq-launcher-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1px;
+    flex: 1;
+    text-align: right;
+  }
+
+  .jsq-launcher-copy strong {
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--jsq-text);
+  }
+
+  .jsq-launcher-copy small {
+    color: var(--jsq-muted);
+    font-size: 9px;
+    line-height: 1.5;
+  }
+
+  .jsq-launcher-arrow {
+    width: 31px;
+    height: 31px;
+    display: grid;
+    place-items: center;
+    flex: 0 0 31px;
+    border-radius: 50%;
+    background: var(--jsq-primary-light);
+    color: var(--jsq-primary);
+    font-size: 17px;
+    transition: .25s ease;
+  }
+
+  .jsq-launcher:hover .jsq-launcher-arrow {
+    background: var(--jsq-primary);
+    color: #fff;
+    transform: translateX(-3px);
+  }
+
+  @keyframes jsq-float {
+
+    0%,
+    100% {
+      transform: translateY(0)
+    }
+
+    50% {
+      transform: translateY(-4px)
+    }
+  }
+
+  .jsq-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100001;
+    background: rgba(22, 27, 58, .56);
+    backdrop-filter: blur(5px);
+  }
+
+  .jsq-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: 100002;
+    width: min(92vw, 460px);
+    max-height: 92vh;
+    overflow: auto;
+    transform: translate(-50%, -50%);
+    padding: 22px 22px 15px;
+    border: 1px solid rgba(255, 255, 255, .7);
+    border-radius: 26px;
+    background: rgba(255, 255, 255, .98);
+    color: var(--jsq-text);
+    box-shadow: var(--jsq-shadow);
+  }
+
+  .jsq-close {
+    position: absolute;
+    top: 13px;
+    left: 14px;
+    z-index: 3;
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    border: 1px solid #e7e9f4;
+    border-radius: 50%;
+    background: #f8f9ff;
+    color: #68718b;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .2s ease;
+  }
+
+  .jsq-close:hover {
+    background: var(--jsq-primary);
+    border-color: var(--jsq-primary);
+    color: #fff;
+    transform: rotate(8deg);
+  }
+
+  .jsq-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin: 3px 0 17px;
+    color: var(--jsq-primary);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+  }
+
+  .jsq-brand-mark {
+    width: 27px;
+    height: 27px;
+    display: grid;
+    place-items: center;
+    border: 1.5px solid var(--jsq-primary);
+    border-radius: 50%;
+    background: var(--jsq-primary-light);
+    font-family: Georgia, serif;
+    font-size: 16px;
+  }
+
+  .jsq-progress {
+    height: 5px;
+    margin: 0 3px 27px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #edf0fa;
+  }
+
+  .jsq-progress span {
+    display: block;
+    height: 100%;
+    width: 0;
+    border-radius: inherit;
+    background: linear-gradient(90deg, var(--jsq-secondary), var(--jsq-primary));
+    transition: width .35s ease;
+  }
+
+  .jsq-content {
+    padding: 0 7px;
+    text-align: center;
+  }
+
+  .jsq-step {
+    display: none
+  }
+
+  .jsq-step.is-active {
+    display: block;
+    animation: jsq-in .3s ease;
+  }
+
+  @keyframes jsq-in {
+    from {
+      opacity: 0;
+      transform: translateX(10px)
+    }
+
+    to {
+      opacity: 1;
+      transform: none
+    }
+  }
+
+  .jsq-sparkle,
+  .jsq-result-icon {
+    width: 55px;
+    height: 55px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 13px;
+    border: 1px solid #dfe3ff;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--jsq-primary-light), #eef9ff);
+    color: var(--jsq-primary);
+    font-size: 23px;
+    box-shadow: 0 8px 25px rgba(95, 99, 242, .1);
+  }
+  .jsq-sparkle {
+    width: 109px;
+    height: 109px;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 3px;
+  }
+
+  .jsq-content h2 {
+    margin: 0 0 9px;
+    color: var(--jsq-text);
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.5;
+  }
+
+  .jsq-content p {
+    max-width: 350px;
+    margin: 0 auto 20px;
+    color: var(--jsq-muted);
+    font-size: 13.5px;
+    line-height: 1.9;
+  }
+
+  .jsq-kicker {
+    margin-bottom: 7px !important;
+    color: var(--jsq-primary) !important;
+    font-size: 11px !important;
+    font-weight: 800;
+  }
+
+  .jsq-question-help {
+    margin-bottom: 13px !important;
+    font-size: 12px !important;
+    color: #8991a8 !important;
+  }
+
+  .jsq-intro small {
+    display: block;
+    margin-top: 11px;
+    color: #9aa1b5;
+    font-size: 10px;
+  }
+
+  .jsq-primary {
+    width: 100%;
+    min-height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 13px;
+    background: linear-gradient(135deg, #748dff, var(--jsq-primary));
+    color: #fff;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(95, 99, 242, .2);
+    transition: .25s ease;
+  }
+
+  .jsq-primary:hover {
+    background: linear-gradient(135deg, var(--jsq-primary), var(--jsq-primary-dark));
+    transform: translateY(-2px);
+    box-shadow: 0 15px 30px rgba(95, 99, 242, .27);
+  }
+
+  .jsq-primary span {
+    font-size: 19px;
+    line-height: 1;
+  }
+
+  .jsq-options {
+    display: grid;
+    gap: 9px;
+    margin-top: 15px;
+  }
+
+  .jsq-options button {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid var(--jsq-border);
+    border-radius: 13px;
+    background: #fff;
+    color: #46506e;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: right;
+    cursor: pointer;
+    transition: .22s ease;
+  }
+
+  .jsq-options button:hover {
+    border-color: rgba(95, 99, 242, .45);
+    background: var(--jsq-primary-light);
+    color: var(--jsq-primary-dark);
+    transform: translateX(-3px);
+    box-shadow: 0 7px 20px rgba(95, 99, 242, .08);
+  }
+
+  .jsq-result h2 {
+    font-size: 21px
+  }
+
+  .jsq-result-icon {
+    background: linear-gradient(135deg, #eef0ff, #edfaff);
+  }
+
+  .jsq-result-list {
+    margin: 13px 0 15px;
+    padding: 12px 15px;
+    border: 1px solid #e7e9f5;
+    border-radius: 13px;
+    background: #f8faff;
+    color: #5e6781;
+    font-size: 15px;
+    line-height: 2;
+    text-align: right;
+  }
+
+  .jsq-result-list div {
+    display: flex;
+    align-items: flex-start;
+    gap: 7px;
+  }
+
+  .jsq-result-list div:before {
+    content: "✓";
+    flex: 0 0 auto;
+    color: var(--jsq-primary);
+    font-weight: 900;
+  }
+
+  .jsq-summary {
+    margin: 0 0 15px;
+    padding: 10px 13px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f5f4ff, #f2faff);
+    color: #68718b;
+    font-size: 15px;
+    line-height: 1.9;
+    text-align: right;
+  }
+
+  .jsq-summary strong {
+    color: var(--jsq-text)
+  }
+
+  .jsq-whatsapp {
+    background: linear-gradient(135deg, #35d978, #20b85c);
+    box-shadow: 0 10px 25px rgba(32, 184, 92, .2);
+  }
+
+  .jsq-whatsapp:hover {
+    background: linear-gradient(135deg, #20b85c, #15984b);
+    box-shadow: 0 15px 30px rgba(32, 184, 92, .27);
+  }
+
+  .jsq-restart {
+    display: block;
+    margin: 12px auto 0;
+    padding: 4px;
+    border: 0;
+    background: none;
+    color: #9299ab;
+    font-family: inherit;
+    font-size: 11px;
+    cursor: pointer;
+  }
+
+  .jsq-restart:hover {
+    color: var(--jsq-primary)
+  }
+
+  .jsq-footer {
+    margin-top: 22px;
+    padding-top: 12px;
+    border-top: 1px solid #edf0f7;
+    color: #9aa1b5;
+    font-size: 9px;
+    text-align: center;
+  }
+
+  @media(max-width:560px) {
+    .jsq-launcher {
+      right: 14px;
+      bottom: 14px;
+      min-width: 0;
+      max-width: calc(100vw - 28px);
+      padding: 6px 8px 6px 7px;
+    }
+
+    .jsq-launcher-avatar {
+      width: 43px;
+      height: 43px;
+      flex-basis: 43px;
+    }
+
+    .jsq-launcher-copy strong {
+      font-size: 12px
+    }
+
+    .jsq-launcher-copy small {
+      font-size: 8px
+    }
+
+    .jsq-launcher-arrow {
+      width: 28px;
+      height: 28px;
+      flex-basis: 28px;
+    }
+
+    .jsq-modal {
+      width: calc(100vw - 24px);
+      max-height: 90vh;
+      padding: 19px 15px 13px;
+      border-radius: 22px;
+    }
+
+    .jsq-content {
+      padding: 0 4px
+    }
+
+    .jsq-content h2 {
+      font-size: 21px
+    }
+
+    .jsq-options button {
+      padding: 12px;
+      font-size: 12px
+    }
+  }
+
+  @media(max-width:360px) {
+    .jsq-launcher-copy small {
+      display: none
+    }
+
+    .jsq-launcher {
+      padding-right: 7px
+    }
+  }
