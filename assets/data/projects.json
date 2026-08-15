@@ -207,52 +207,6 @@
     "website": "https://j.top4top.io/m_387838xx91.mp4"
   },
   {
-    "id": "asia-family",
-    "name": "عائلة آسيا",
-    "category": " تصميم متاجر",
-    "subCategory": "ثيم ماركت ",
-    "description": "متجر منتجات Asia Family بتجربة تسوق سلسة وموثوقة.",
-    "image": "",
-    "website": "https://asia-family.com"
-  },
-  {
-    "id": "busaadstore",
-    "name": "بوسعد للبلاستيك",
-    "category": " تصميم متاجر",
-    "subCategory": "css ",
-    "description": "متجر منتجات للاكواب والبلاستيك بتجربة تسوق سلسة وموثوقة.",
-    "image": "",
-    "website": "https://busaadstore.com/"
-  },
-  {
-    "id": "akhtamjeddah",
-    "name": "عذق وتمرة",
-    "category": " تصميم متاجر",
-    "subCategory": "ثيم سيليا ",
-    "description": "متجر منتجات عذق وتمرة بتجربة تسوق سلسة وموثوقة.",
-    "image": "",
-    "website": "https://ethqwtamrh.com/"
-  },
-  {
-    "id": "wargear",
-    "name": "wargear لامة الحرب",
-    "category": " تصميم متاجر",
-    "subCategory": "ثيم سيليا ",
-    "description": "متجر منتجات Wargear للمنتجات التكتيكية والحربية بتجربة تسوق سلسة وموثوقة.",
-    "image": "",
-    "website": "https://wargear.sa"
-  },
-  {
-    "id": "yaka.one",
-    "name": "ياكا ون",
-    "category": " تصميم متاجر",
-    "subCategory": "برو css ",
-    "description": "متجر منتجات ياكا ون بتجربة تسوق سلسة وموثوقة.",
-    "image": "",
-    "website": "https://yaka.one/ar"
-  },
-
-  {
     "id": "smatcobox",
     "name": "مسباح الملقا",
     "category": "تصميم متاجر",
@@ -283,19 +237,10 @@
     "id": "purityniche",
     "name": "purityniche",
     "category": "تصميم متاجر",
-    "subCategory": "الحملات الإعلانية",
-    "description": "متجر للخدمات الذكية وخزائن الاستلام بتقنيات حديثة وموثوقة.",
-    "image": "",
-    "website": "https://judymarketing.com"
-  },
-  {
-    "id": "smartcool",
-    "name": "سمارت كول",
-    "category": "تصميم متاجر",
-    "subCategory": "استخراج وثيقة",
-    "description": "متجر أجهزة تبريد وتكييف مع خيارات دفع متعددة وتوصيل سريع.",
-    "image": "",
-    "website": "https://judymarketing.com"
+    "subCategory": "ثيم سيليا",
+    "description": "متجر للعطور والنيش بتقنيات حديثة وموثوقة.",
+    "image": "https://b.top4top.io/p_3878e4kmb1.png",
+    "website": "https://l.top4top.io/m_38789vycb1.mp4"
   },
   {
     "id": "rouya",
@@ -303,25 +248,16 @@
     "category": "تصميم متاجر",
     "subCategory": "UGC",
     "description": "متجر مناديل ومنتجات منزلية بجودة عالية وأسعار مناسبة.",
-    "image": "",
-    "website": "https://judymarketing.com"
+    "image": "https://i.top4top.io/p_3878etyl41.png",
+    "website": "https://d.top4top.io/m_3878dxorw1.mp4"
   },
   {
-    "id": "mh-fashion",
-    "name": "M&H فاشن",
+    "id": "alreefmeats",
+    "name": "تطبيق الريف للحوم ",
     "category": "تصميم متاجر",
-    "subCategory": "تصوير لايف ",
-    "description": "متجر فساتين نسائية بتصميم أنيق وتجربة تسوق تليق بذوقك.",
-    "image": "",
-    "website": "https://judymarketing.com"
-  },
-  {
-    "id": "afkar-books",
-    "name": "أفكار للكتب",
-    "category": "تصميم متاجر",
-    "subCategory": "AI",
-    "description": "متجر كتب وروايات متنوعة بتصميم بسيط وتجربة قراءة مريحة.",
-    "image": "",
-    "website": "https://judymarketing.com"
+    "subCategory": "تطبيق قوقل بلاى وابل ستور ",
+    "description": "متجر الريف للحوم /alreefmeats بتصميم بسيط وتجربة قراءة مريحة.",
+    "image": "https://a.top4top.io/p_3878d4kdq1.png",
+    "website": "https://l.top4top.io/m_38789vycb1.mp4"
   }
 ]
