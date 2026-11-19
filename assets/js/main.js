@@ -345,14 +345,80 @@ function getCategoryCount(category) {
 
   return projects.filter((project) => project.category === category).length;
 }
+/* =========================
+   زر الطلب على الواتساب
+   ========================= */
+
+const JUDY_WHATSAPP = "966552261549";
+
+function getOrderCta(project) {
+  const slug = CATEGORY_SLUGS[project.category] || "stores";
+  if (project.type === "video") return { label: "أبي فيديو زي هذا", want: "أبي فيديو زيه لمتجري" };
+  if (slug === "design") return { label: "أبي تصاميم زيها", want: "أبي تصاميم زيها لمتجري" };
+  if (slug === "seo" || slug === "marketing") return { label: "أبي نتيجة زي هذي", want: "أبي نتيجة زيها لمتجري" };
+  if (/^https?:/.test(project.id)) return { label: "اطلب خدمتك", want: "أبي أطلب خدمة لمتجري" };
+  return { label: "أبي متجر زي هذا", want: "أبي متجر زيه" };
+}
+
+function getOrderLink(project) {
+  const { want } = getOrderCta(project);
+  const text = `السلام عليكم، شفت «${project.name.trim()}» في صفحة أعمالكم و${want}`;
+  return `https://wa.me/${JUDY_WHATSAPP}?text=${encodeURIComponent(text)}`;
+}
+
+/* =========================
+   عرض الأعمال على دفعات (يظهر المزيد مع النزول)
+   ========================= */
+
+const PAGE_SIZE = 12;
+let currentList = [];
+let shownCount = 0;
+let loadMoreObserver = null;
+
 function renderProjects(data) {
   if (!projectsContainer || !emptyState) return;
 
   emptyState.hidden = data.length !== 0;
+  currentList = data;
+  shownCount = 0;
+  projectsContainer.innerHTML = "";
+  showMoreProjects();
+}
 
-  projectsContainer.innerHTML = data
-    .map(
-      (project) => {
+function showMoreProjects() {
+  const next = currentList.slice(shownCount, shownCount + PAGE_SIZE);
+  projectsContainer.insertAdjacentHTML("beforeend", next.map(cardHtml).join(""));
+  shownCount += next.length;
+  updateLoadMore();
+}
+
+function updateLoadMore() {
+  let wrap = document.getElementById("loadMoreWrap");
+  if (!wrap) {
+    wrap = document.createElement("div");
+    wrap.id = "loadMoreWrap";
+    wrap.className = "load-more";
+    wrap.innerHTML = `<button type="button" class="load-more__btn"><i class="fa-solid fa-chevron-down" aria-hidden="true"></i>عرض المزيد من الأعمال</button>`;
+    projectsContainer.after(wrap);
+    wrap.querySelector("button").addEventListener("click", showMoreProjects);
+    if ("IntersectionObserver" in window) {
+      loadMoreObserver = new IntersectionObserver(
+        (entries) => {
+          if (entries.some((e) => e.isIntersecting) && shownCount < currentList.length) showMoreProjects();
+        },
+        { rootMargin: "0px 0px 500px 0px" },
+      );
+      loadMoreObserver.observe(wrap);
+    }
+  }
+  const left = currentList.length - shownCount;
+  wrap.hidden = left <= 0;
+  if (left > 0) {
+    wrap.querySelector("button").lastChild.textContent = `عرض المزيد من الأعمال (${left})`;
+  }
+}
+
+function cardHtml(project) {
         const isGallery = project.type === "gallery";
         const count = (project.images || []).length;
         const countLabel =
@@ -418,13 +484,19 @@ function renderProjects(data) {
                 <i class="${actionIcon}"></i>
                 ${actionLabel}
               </a>
+              <a
+                class="project-order"
+                href="${escapeAttribute(getOrderLink(project))}"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                ${escapeHtml(getOrderCta(project).label)}
+              </a>
             </div>
           </div>
         </article>
       `;
-      },
-    )
-    .join("");
 }
 
 /* =========================
