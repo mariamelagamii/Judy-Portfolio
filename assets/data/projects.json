@@ -547,61 +547,11 @@
     "website": "assets/media/works/motion-toy-car.mp4"
   },
   {
-    "id": "seo-case-3-months",
-    "name": "سيو لمتجر عميل: باقة 3 شهور",
-    "category": "السيو والظهور في جوجل",
-    "subCategory": "تحسين محركات البحث",
-    "description": "زيارات جوجل زادت من 1,512 إلى 10,456 زيارة في الشهر خلال 3 شهور، بعد تحسين 150 منتج وكتابة 12 مقال.",
-    "type": "gallery",
-    "image": "assets/media/works/seo-case-3-months.webp",
-    "images": [
-      "assets/media/works/seo-case-3-months-1.webp"
-    ]
-  },
-  {
-    "id": "seo-case-1-month",
-    "name": "سيو لمتجر عميل: باقة شهر",
-    "category": "السيو والظهور في جوجل",
-    "subCategory": "تحسين محركات البحث",
-    "description": "زيارات جوجل زادت من 41 إلى 247 خلال شهر، بعد تحسين 50 منتج وكتابة 4 مقالات.",
-    "type": "gallery",
-    "image": "assets/media/works/seo-case-1-month.webp",
-    "images": [
-      "assets/media/works/seo-case-1-month-1.webp"
-    ]
-  },
-  {
-    "id": "seo-case-100-products",
-    "name": "سيو داخلي لـ100 منتج",
-    "category": "السيو والظهور في جوجل",
-    "subCategory": "تحسين صفحات المنتجات",
-    "description": "زيارات جوجل زادت من 92 إلى 474 خلال شهر بعد تحسين 100 منتج وصورها.",
-    "type": "gallery",
-    "image": "assets/media/works/seo-case-100-products.webp",
-    "images": [
-      "assets/media/works/seo-case-100-products-1.webp"
-    ]
-  },
-  {
-    "id": "sales-170",
-    "name": "زيادة مبيعات متجر 170% في شهرين",
-    "category": "التسويق والسوشيال",
-    "subCategory": "إدارة حملات إعلانية",
-    "description": "المبيعات الشهرية زادت من 30 ألف إلى 80 ألف ريال، والطلبات من 141 إلى 331 طلب.",
-    "type": "gallery",
-    "image": "assets/media/works/sales-170.webp",
-    "images": [
-      "assets/media/works/sales-170-1.webp",
-      "assets/media/works/sales-170-2.webp",
-      "assets/media/works/sales-170-3.webp"
-    ]
-  },
-  {
     "id": "arab-shooter",
-    "name": "نتائج متجر عرب شوتر",
+    "name": "نتائج متجر ألعاب إلكترونية",
     "category": "التسويق والسوشيال",
     "subCategory": "نتائج متجر",
-    "description": "من لوحة سلة: 169 طلب و16,408 ريال مبيعات في شهر أبريل.",
+    "description": "من لوحة سلة للمتجر: 169 طلب و16,408 ريال مبيعات في شهر أبريل.",
     "type": "gallery",
     "image": "assets/media/works/arab-shooter.webp",
     "images": [
