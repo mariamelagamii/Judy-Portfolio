@@ -102,6 +102,21 @@ categoryShowcase?.addEventListener(
   true,
 );
 
+/* بعد السحب: يثبت على أقرب بطاقة (القيمة سالبة في الصفحات العربية) */
+
+function snapToNearestCategory() {
+  if (!categoryShowcase) return;
+
+  const step = getCategoryScrollAmount();
+
+  if (!step) return;
+
+  categoryShowcase.scrollTo({
+    left: Math.round(categoryShowcase.scrollLeft / step) * step,
+    behavior: "smooth",
+  });
+}
+
 /* تعطيل السهم عند بداية ونهاية الـ Slider */
 
 function updateCategoryArrows() {
@@ -155,11 +170,13 @@ async function loadProjects() {
       throw new Error(`تعذر تحميل البيانات: ${response.status}`);
     }
 
-    projects = (await response.json()).filter((project) => !project.hidden);
+    projects = (await response.json())
+      .filter((project) => !project.hidden)
+      .map((project) => ({ ...project, category: String(project.category || "").trim() }));
 
+    activeCategory = getCategoryFromUrl();
     renderCategoryShowcase();
-    renderProjects(projects);
-    updateProjectsHeading(activeCategory);
+    selectCategory(activeCategory, { updateUrl: false });
   } catch (error) {
     console.error(error);
 
@@ -174,47 +191,57 @@ async function loadProjects() {
   }
 }
 
+const CATEGORY_ORDER = [
+  "الكل",
+  "تصميم المتاجر",
+  "السيو والظهور في جوجل",
+  "التسويق والسوشيال",
+  "الجرافيك والموشن",
+];
+
+/* روابط مباشرة لكل قسم: ?section=seo */
+const CATEGORY_SLUGS = {
+  "تصميم المتاجر": "stores",
+  "السيو والظهور في جوجل": "seo",
+  "التسويق والسوشيال": "marketing",
+  "الجرافيك والموشن": "design",
+};
+
 function getCategories() {
-  return [
-    "الكل",
-    ...new Set(projects.map((project) => project.category).filter(Boolean)),
-  ];
+  const present = new Set(projects.map((project) => project.category).filter(Boolean));
+  const ordered = CATEGORY_ORDER.filter((c) => c === "الكل" || present.has(c));
+  const extra = [...present].filter((c) => !CATEGORY_ORDER.includes(c));
+  return [...ordered, ...extra];
 }
 function getCategoryInfo(category) {
   const info = {
     الكل: {
       title: "جميع أعمالنا",
-      description: "استعرض جميع المشاريع والخدمات التي قمنا بتنفيذها",
+      description: "كل المشاريع والخدمات اللي نفذناها",
       icon: "fa-solid fa-layer-group",
     },
 
     "تصميم المتاجر": {
       title: "تصميم المتاجر",
-      description: "تصميم وتطوير متاجر إلكترونية احترافية ومتجاوبة",
+      description: "متاجر سلة صممناها وطورناها من الصفر",
       icon: "fa-solid fa-cart-shopping",
     },
 
-    "تصميم صور": {
-      title: "تصميم الصور",
-      description: "تصاميم إبداعية للمنتجات والإعلانات والمحتوى",
-      icon: "fa-regular fa-image",
-    },
-
-    SEO: {
-      title: "تحسين محركات البحث",
-      description: "تحسين ظهور المواقع والمتاجر وزيادة الزيارات",
+    "السيو والظهور في جوجل": {
+      title: "السيو والظهور في جوجل",
+      description: "شغلنا عشان المتاجر تظهر في نتائج البحث",
       icon: "fa-solid fa-magnifying-glass-chart",
     },
 
-    التسويق: {
-      title: "التسويق الرقمي",
-      description: "حملات تسويقية تساعد العلامات التجارية على النمو",
+    "التسويق والسوشيال": {
+      title: "التسويق والسوشيال",
+      description: "إدارة حملات وحسابات سوشيال للمتاجر",
       icon: "fa-solid fa-bullhorn",
     },
 
-    "الهوية البصرية": {
-      title: "الهوية البصرية",
-      description: "تصميم هوية متكاملة تعكس شخصية العلامة التجارية",
+    "الجرافيك والموشن": {
+      title: "الجرافيك والموشن",
+      description: "بانرات وصور منتجات وفيديوهات موشن",
       icon: "fa-solid fa-palette",
     },
   };
@@ -226,6 +253,36 @@ function getCategoryInfo(category) {
       icon: "fa-solid fa-folder-open",
     }
   );
+}
+
+function selectCategory(category, { updateUrl = true } = {}) {
+  activeCategory = getCategories().includes(category) ? category : "الكل";
+  updateProjectsHeading(activeCategory);
+
+  categoryShowcase
+    ?.querySelectorAll(".category-showcase-card")
+    .forEach((item) => {
+      item.classList.toggle("active", item.dataset.category === activeCategory);
+    });
+
+  renderProjects(
+    activeCategory === "الكل"
+      ? projects
+      : projects.filter((project) => project.category === activeCategory),
+  );
+
+  if (updateUrl) {
+    const url = new URL(window.location.href);
+    const slug = CATEGORY_SLUGS[activeCategory];
+    if (slug) url.searchParams.set("section", slug);
+    else url.searchParams.delete("section");
+    history.replaceState(null, "", url);
+  }
+}
+
+function getCategoryFromUrl() {
+  const slug = new URLSearchParams(window.location.search).get("section");
+  return Object.keys(CATEGORY_SLUGS).find((c) => CATEGORY_SLUGS[c] === slug) || "الكل";
 }
 
 function renderCategoryShowcase() {
@@ -267,20 +324,7 @@ function renderCategoryShowcase() {
     .querySelectorAll(".category-showcase-card")
     .forEach((card) => {
       card.addEventListener("click", () => {
-        activeCategory = card.dataset.category;
-        updateProjectsHeading(activeCategory);
-        categoryShowcase
-          .querySelectorAll(".category-showcase-card")
-          .forEach((item) => {
-            item.classList.toggle("active", item === card);
-          });
-
-        const filteredProjects =
-          activeCategory === "الكل"
-            ? projects
-            : projects.filter((project) => project.category === activeCategory);
-
-        renderProjects(filteredProjects);
+        selectCategory(card.dataset.category);
       });
     });
 }
@@ -299,16 +343,31 @@ function renderProjects(data) {
 
   projectsContainer.innerHTML = data
     .map(
-      (project) => `
-        <article class="project-card">
+      (project) => {
+        const isGallery = project.type === "gallery";
+        const count = (project.images || []).length;
+        const countLabel =
+          count === 2 ? "صورتين" : count <= 10 ? `${count} صور` : `${count} صورة`;
+        const isVideo = project.type === "video";
+        const actionLabel = isGallery ? "شاهد الأعمال" : isVideo ? "شاهد الفيديو" : "عرض الموقع";
+        const actionIcon = isGallery
+          ? "fa-regular fa-images"
+          : isVideo
+            ? "fa-solid fa-play"
+            : "fa-solid fa-arrow-up-right-from-square";
+        return `
+        <article class="project-card${isGallery ? " project-card--gallery" : ""}">
           <a
             class="project-preview"
             href="${escapeAttribute(project.website || "#")}"
             data-project-preview
+            data-project-id="${escapeAttribute(project.id)}"
             data-project-url="${escapeAttribute(project.website || "")}"
             data-project-name="${escapeAttribute(project.name)}"
             aria-label="عرض مشروع ${escapeAttribute(project.name)}"
           >
+            ${isGallery && count > 1 ? `<span class="project-media-badge"><i class="fa-regular fa-images" aria-hidden="true"></i>${countLabel}</span>` : ""}
+            ${isVideo ? `<span class="project-media-badge"><i class="fa-solid fa-play" aria-hidden="true"></i>فيديو</span>` : ""}
             <img
               src="${escapeAttribute(project.image)}"
               alt="${escapeAttribute(project.name)}"
@@ -343,16 +402,18 @@ function renderProjects(data) {
                 class="project-link"
                 href="${escapeAttribute(project.website || "#")}"
                 data-project-preview
+                data-project-id="${escapeAttribute(project.id)}"
                 data-project-url="${escapeAttribute(project.website || "")}"
                 data-project-name="${escapeAttribute(project.name)}"
               >
-                <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                عرض الموقع
+                <i class="${actionIcon}"></i>
+                ${actionLabel}
               </a>
             </div>
           </div>
         </article>
-      `,
+      `;
+      },
     )
     .join("");
 }
@@ -933,6 +994,8 @@ function closeProjectModal() {
   if (!projectModal) return;
 
   projectModal.classList.remove("is-open");
+  projectModal.querySelector(".project-preview-modal__box")?.classList.remove("is-gallery");
+  galleryState = null;
 
   document.body.style.overflow = "";
 
@@ -953,10 +1016,109 @@ document.addEventListener("click", (event) => {
   event.preventDefault();
   event.stopPropagation();
 
+  const project = projects.find((item) => item.id === trigger.dataset.projectId);
+
+  if (project?.type === "gallery" && project.images?.length) {
+    openProjectGallery(project);
+    return;
+  }
+
   openProjectModal(
     trigger.dataset.projectUrl,
     trigger.dataset.projectName || "المشروع",
   );
+
+  /* فيديوهات الموشن الطولية تظهر على خلفية غامقة */
+  if (project?.type === "video") {
+    projectModal?.querySelector(".project-preview-modal__box")?.classList.add("is-gallery");
+  }
+});
+
+/* =========================
+   معرض الصور (أعمال الجرافيك والسيو)
+   ========================= */
+
+let galleryState = null;
+
+function showGalleryImage(index) {
+  if (!galleryState) return;
+  const { project, img, count } = galleryState;
+  const total = project.images.length;
+  galleryState.index = (index + total) % total;
+  const current = galleryState.index;
+  const src = project.images[current];
+
+  img.classList.add("is-swapping");
+  const next = new Image();
+  next.onload = next.onerror = () => {
+    if (!galleryState || galleryState.index !== current) return;
+    img.src = src;
+    img.alt = `${project.name} - ${current + 1}`;
+    img.classList.remove("is-swapping");
+  };
+  next.src = src;
+  count.textContent = `${current + 1} / ${total}`;
+
+  /* تحميل الصورة اللي بعدها مسبقًا */
+  new Image().src = project.images[(current + 1) % total];
+}
+
+function openProjectGallery(project) {
+  createProjectModal();
+
+  const many = project.images.length > 1;
+  projectModal.querySelector(".project-preview-modal__box").classList.add("is-gallery");
+
+  projectModalContent.innerHTML = `
+    <div class="project-gallery">
+      <figure class="project-gallery__stage">
+        <img class="project-gallery__img" src="${escapeAttribute(project.images[0])}" alt="${escapeAttribute(project.name)}">
+      </figure>
+      ${many ? `
+      <button type="button" class="project-gallery__nav project-gallery__nav--prev" aria-label="الصورة السابقة"><i class="fa-solid fa-chevron-right" aria-hidden="true"></i></button>
+      <button type="button" class="project-gallery__nav project-gallery__nav--next" aria-label="الصورة التالية"><i class="fa-solid fa-chevron-left" aria-hidden="true"></i></button>` : ""}
+      <div class="project-gallery__bar">
+        <strong>${escapeHtml(project.name)}</strong>
+        <span class="project-gallery__count"${many ? "" : " hidden"}></span>
+      </div>
+    </div>
+  `;
+
+  galleryState = {
+    project,
+    index: 0,
+    img: projectModalContent.querySelector(".project-gallery__img"),
+    count: projectModalContent.querySelector(".project-gallery__count"),
+  };
+  showGalleryImage(0);
+
+  projectModalContent
+    .querySelector(".project-gallery__nav--next")
+    ?.addEventListener("click", () => showGalleryImage(galleryState.index + 1));
+  projectModalContent
+    .querySelector(".project-gallery__nav--prev")
+    ?.addEventListener("click", () => showGalleryImage(galleryState.index - 1));
+
+  /* السحب بالإصبع على الجوال (الصفحة من اليمين لليسار) */
+  const stage = projectModalContent.querySelector(".project-gallery__stage");
+  let startX = null;
+  stage.addEventListener("touchstart", (e) => { startX = e.touches[0].clientX; }, { passive: true });
+  stage.addEventListener("touchend", (e) => {
+    if (startX === null || !many) return;
+    const dx = e.changedTouches[0].clientX - startX;
+    if (Math.abs(dx) > 40) showGalleryImage(galleryState.index + (dx > 0 ? 1 : -1));
+    startX = null;
+  });
+
+  projectModal.classList.add("is-open");
+  document.body.style.overflow = "hidden";
+  projectModal.querySelector(".project-preview-modal__close")?.focus();
+}
+
+document.addEventListener("keydown", (event) => {
+  if (!galleryState || !projectModal?.classList.contains("is-open")) return;
+  if (event.key === "ArrowLeft") showGalleryImage(galleryState.index + 1);
+  if (event.key === "ArrowRight") showGalleryImage(galleryState.index - 1);
 });
 
 /* =========================

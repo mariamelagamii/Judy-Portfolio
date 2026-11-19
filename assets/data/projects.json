@@ -2,7 +2,7 @@
   {
     "id": "https://salla.com/services/providers/35011262",
     "name": "آراء عملائنا",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "ابدء وكن جزء من النجاح",
     "description": "أكثر من 1800 طلب مكتمل وأكثر من 900 تقييم ممتاز",
     "image": "assets/media/works/reviews.webp",
@@ -11,7 +11,7 @@
   {
     "id": "jasmine-care",
     "name": "جاسمين كير",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "ثيم سيليا",
     "description": "متجر منتجات عناية شخصية وتجميل بتجربة تسوق سلسة وموثوقة.",
     "image": "assets/media/works/jasmine-care.webp",
@@ -20,7 +20,7 @@
   {
     "id": "hikvision",
     "name": "hikvision هيك فيجن",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "css",
     "description": "متجر hikvision متخصصة في بيع أنظمة وكاميرات المراقبة والحلول الأمنية المتكاملة.",
     "image": "assets/media/works/hikvision.webp",
@@ -29,7 +29,7 @@
   {
     "id": "car-edition",
     "name": "كارايديشن",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "برو css",
     "description": "متجر متخصص فى مستلزمات السيارات بتجربة تسوق سلسة وموثوقة.",
     "image": "assets/media/works/car-edition.webp",
@@ -38,7 +38,7 @@
   {
     "id": "khamksa",
     "name": "خام الوطن",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "برو CSS ",
     "description": "متجر للذهب والسبائك بتجربة تسوق سلسة وموثوقة.",
     "image": "assets/media/works/khamksa.webp",
@@ -47,7 +47,7 @@
   {
     "id": "nyazitoys",
     "name": " العاب نيازي ",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "يافا ",
     "description": "متجر منتجات لمتجر نيازى للألعاب بتجربة تسوق سلسة وموثوقة.",
     "image": "assets/media/works/nyazitoys.webp",
@@ -56,7 +56,7 @@
   {
     "id": "negma-ksa",
     "name": "نجمة",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "ثيم سيليا",
     "description": "متجر نجمة منتجات بطانيات الأطفال بتجربة تسوق سلسة وموثوقة.",
     "image": "assets/media/works/negma-ksa.webp",
@@ -65,7 +65,7 @@
   {
     "id": "bagedoclinics",
     "name": "عيادات باقدو الطبية",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "ثيم و CSS",
     "description": "متجر عيادات باقدو الطبية بجدة متخصص فى الحجوزات والكشف الطبي.",
     "image": "assets/media/works/bagedoclinics.webp",
@@ -74,7 +74,7 @@
   {
     "id": "manahil-almahmood",
     "name": "مناحل المحمود",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "برو css",
     "description": "متجر متخصص فى العسل الطبيعي بتجربة تسوق سلسة وموثوقة.",
     "image": "assets/media/works/manahil-almahmood.webp",
@@ -83,7 +83,7 @@
   {
     "id": "lumierstore",
     "name": "لوميرا للأحذية",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "ثيم ملاك ",
     "description": "متجر لوميرا للأحذية تم التصميم بتجربة تسوق سلسة وموثوقة.",
     "image": "assets/media/works/lumierstore.webp",
@@ -92,7 +92,7 @@
   {
     "id": "rmfil",
     "name": "رام للنظارات",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "ثيم ملاك ",
     "description": "متجر مهتم بالنظارات تم التصميم بتجربة تسوق سلسة وموثوقة.",
     "image": "assets/media/works/rmfil.webp",
@@ -101,7 +101,7 @@
   {
     "id": "mlnlab",
     "name": "mlnlab",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "css",
     "description": "mlnlab متجر متخصص فى أجود أنواع البن المختص",
     "image": "assets/media/works/mlnlab.webp",
@@ -110,7 +110,7 @@
   {
     "id": "smatcobox",
     "name": "smatcobox",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "سيليا و css",
     "description": "متجر متخصص فى تصميم وتنفيذ البوكسات الفاخرة المصنوعة من الجلد الإيطالي،.",
     "image": "assets/media/works/smatcobox.webp",
@@ -119,7 +119,7 @@
   {
     "id": "dr-mbs",
     "name": "د.مشاري بن سّليم",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "ثيم سيليا ",
     "description": "متجر د.مشاري للطب النفسي بتجربة تسوق سلسة وموثوقة.",
     "image": "assets/media/works/dr-mbs.webp",
@@ -128,27 +128,25 @@
   {
     "id": "alhamdan.est",
     "name": "الحمدان للمواد الغذائية",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "CSS ",
     "description": "متجر الحمدان للمواد الغذائية بتجربة تسوق سلسة وموثوقة.",
-    "image": "https://c.top4top.io/p_38786ln5w1.png",
-    "website": "https://e.top4top.io/m_3878xjehb1.mp4",
-    "hidden": true
+    "image": "assets/media/works/alhamdan.est.webp",
+    "website": "assets/media/works/alhamdan.est.mp4"
   },
   {
     "id": "akraluxury",
     "name": "أكرا للذهب والمجوهرات",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "ثيم سيليا ",
     "description": "متجر أكرا  akraluxury منتجات للذهب والأكسسوارات بتجربة تسوق سلسة وموثوقة.",
-    "image": "https://h.top4top.io/p_3878e59dq1.png",
-    "website": "https://h.top4top.io/m_3878qsnku1.mp4",
-    "hidden": true
+    "image": "assets/media/works/akraluxury.webp",
+    "website": "assets/media/works/akraluxury.mp4"
   },
   {
     "id": "alwkeel-toys",
     "name": "الوكيل للألعاب",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "css برو ",
     "description": "متجرالوكيل للألعاب alwkeel-toys منتجات الاسكوتر بتجربة تسوق سلسة وموثوقة.",
     "image": "assets/media/works/alwkeel-toys.webp",
@@ -157,7 +155,7 @@
   {
     "id": "sofana-sa",
     "name": "سوفانا للديكور",
-    "category": "تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "تصوير لايف ",
     "description": "متجر sofana-sa للديكور  بتصميم أنيق وتجربة تسوق تليق بذوقك.",
     "image": "assets/media/works/sofana-sa.webp",
@@ -166,7 +164,7 @@
   {
     "id": "hlalna.app",
     "name": "تطبيق حلالنا للحوم",
-    "category": "تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "تطبيق قوقل بلاى وابل ستور",
     "description": "تصميم تطبيق حلالنا للحوم hlalna.app فى قوقل بلاى وابل ستور.",
     "image": "assets/media/works/hlalna.app.webp",
@@ -175,7 +173,7 @@
   {
     "id": "n-kh",
     "name": "نقوة خرز",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "ابدء وكن جزء من النجاح",
     "description": "متجر نقوة خرز للسبح n-kh بتجربة تسوق سلسة وموثوقة.",
     "image": "assets/media/works/n-kh.webp",
@@ -184,7 +182,7 @@
   {
     "id": "sedrafashion",
     "name": "سدرا فاشون للعبايات",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "الثيم",
     "description": "تصميم متجر سدرا فاشون للعبايت sedrafashion بتصاميم والوان تناسب الهويه .",
     "image": "assets/media/works/sedrafashion.webp",
@@ -193,7 +191,7 @@
   {
     "id": "akhtamjeddah",
     "name": "أختام جدة",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "ثيم سيليا ",
     "description": "متجر منتجات للأختام والأحبار بتجربة تسوق سلسة وموثوقة.",
     "image": "assets/media/works/akhtamjeddah.webp",
@@ -202,7 +200,7 @@
   {
     "id": "lovure",
     "name": "لوفيرا ",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "ثيم سيليا ",
     "description": "متجر لوفيرا lovure بتجربة تسوق سلسة وموثوقة.",
     "image": "https://k.top4top.io/p_3878f5cbr1.png",
@@ -212,7 +210,7 @@
   {
     "id": "topmodares",
     "name": "المدرس المميز",
-    "category": "تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "الثيم",
     "description": "متجر المدرس المميز متجر رقمي بهوية راقية وسهلة الاستخدام.",
     "image": "assets/media/works/topmodares.webp",
@@ -221,7 +219,7 @@
   {
     "id": "cyop.sa",
     "name": "كروب للأزياء",
-    "category": "تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "الثيم",
     "description": "cyop.sa متجر متخصص في الأزياء  بتصميم عصري وتجربة تسوق فاخرة.",
     "image": "assets/media/works/cyop.sa.webp",
@@ -230,17 +228,16 @@
   {
     "id": "shaha",
     "name": "شاها للعبايات",
-    "category": " تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "ثيم سيليا",
     "description": "متجر للعبايات بتجربة تسوق سلسة وموثوقة.",
-    "image": "https://j.top4top.io/p_387899fsj1.png",
-    "website": "https://k.top4top.io/m_3878k6mgg1.mp4",
-    "hidden": true
+    "image": "assets/media/works/shaha.webp",
+    "website": "assets/media/works/shaha.mp4"
   },
   {
     "id": "purityniche",
     "name": "purityniche",
-    "category": "تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "ثيم سيليا",
     "description": "متجر للعطور والنيش بتقنيات حديثة وموثوقة.",
     "image": "assets/media/works/purityniche.webp",
@@ -249,7 +246,7 @@
   {
     "id": "rouya",
     "name": "رؤية للمناديل",
-    "category": "تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "UGC",
     "description": "متجر مناديل ومنتجات منزلية بجودة عالية وأسعار مناسبة.",
     "image": "https://i.top4top.io/p_3878etyl41.png",
@@ -259,7 +256,7 @@
   {
     "id": "alreefmeats",
     "name": "تطبيق الريف للحوم ",
-    "category": "تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "تطبيق قوقل بلاى وابل ستور ",
     "description": "متجر الريف للحوم alreefmeats بتصميم بسيط وتجربة قراءة مريحة.",
     "image": "https://a.top4top.io/p_3878d4kdq1.png",
@@ -269,10 +266,359 @@
   {
     "id": "athiraksa",
     "name": "أثير العطور ",
-    "category": "تصميم متاجر",
+    "category": "تصميم المتاجر",
     "subCategory": "الثيم ",
     "description": "متجر أثير العطور athiraksa بتصميم بسيط وتجربة قراءة مريحة.",
     "image": "assets/media/works/athiraksa.webp",
     "website": "assets/media/works/athiraksa.mp4"
+  },
+  {
+    "id": "store-banners",
+    "name": "بانرات واجهات متاجر",
+    "category": "الجرافيك والموشن",
+    "subCategory": "تصميم بانرات",
+    "description": "بانرات لواجهات متاجر مختلفة بمقاس سلة، كل بانر برسالة وحدة واضحة تشد العميل.",
+    "type": "gallery",
+    "image": "assets/media/works/store-banners.webp",
+    "images": [
+      "assets/media/works/store-banners-1.webp",
+      "assets/media/works/store-banners-2.webp",
+      "assets/media/works/store-banners-3.webp",
+      "assets/media/works/store-banners-4.webp",
+      "assets/media/works/store-banners-5.webp"
+    ]
+  },
+  {
+    "id": "niazi-banners",
+    "name": "بانرات متجر نيازي للألعاب",
+    "category": "الجرافيك والموشن",
+    "subCategory": "تصميم بانرات",
+    "description": "بانرات للواجهة تعرض السكوترات والدراجات الكهربائية بصور حركة قوية.",
+    "type": "gallery",
+    "image": "assets/media/works/niazi-banners.webp",
+    "images": [
+      "assets/media/works/niazi-banners-1.webp",
+      "assets/media/works/niazi-banners-2.webp"
+    ]
+  },
+  {
+    "id": "ugc-photos",
+    "name": "صور UGC للمنتجات",
+    "category": "الجرافيك والموشن",
+    "subCategory": "صور منتجات",
+    "description": "صور بأسلوب تجربة العميل الحقيقية للإعلانات وصفحات المنتجات.",
+    "type": "gallery",
+    "image": "assets/media/works/ugc-photos.webp",
+    "images": [
+      "assets/media/works/ugc-photos-1.webp",
+      "assets/media/works/ugc-photos-2.webp",
+      "assets/media/works/ugc-photos-3.webp",
+      "assets/media/works/ugc-photos-4.webp"
+    ]
+  },
+  {
+    "id": "a1-store",
+    "name": "متجر A1",
+    "category": "تصميم المتاجر",
+    "subCategory": "متجر منتج واحد",
+    "description": "متجر لمنتج واحد (حلوى الكرياتين)، الصفحة كلها مبنية عشان تبيع المنتج.",
+    "image": "assets/media/works/a1-store.webp",
+    "website": "assets/media/works/a1-store.mp4"
+  },
+  {
+    "id": "yaka",
+    "name": "متجر YAKA",
+    "category": "تصميم المتاجر",
+    "subCategory": "تصميم متجر",
+    "description": "متجر وجبات ونمط حياة صحي بأقسام واضحة وأسعار ظاهرة.",
+    "image": "assets/media/works/yaka.webp",
+    "website": "assets/media/works/yaka.mp4"
+  },
+  {
+    "id": "aman-law",
+    "name": "أمان للمحاماة",
+    "category": "تصميم المتاجر",
+    "subCategory": "موقع خدمات",
+    "description": "موقع مكتب محاماة يعرض الخدمات القانونية ويسهل طلب الاستشارة.",
+    "image": "assets/media/works/aman-law.webp",
+    "website": "assets/media/works/aman-law.mp4"
+  },
+  {
+    "id": "orienty-gold",
+    "name": "أورينتي للذهب",
+    "category": "تصميم المتاجر",
+    "subCategory": "تصميم متجر",
+    "description": "متجر سبائك ذهب مضمونة ومعتمدة بتجربة شراء موثوقة.",
+    "image": "assets/media/works/orienty-gold.webp",
+    "website": "assets/media/works/orienty-gold.mp4"
+  },
+  {
+    "id": "bafan",
+    "name": "بافان الورد",
+    "category": "تصميم المتاجر",
+    "subCategory": "تصميم متجر",
+    "description": "متجر عطور وهدايا فاخرة بصور منتجات راقية.",
+    "image": "assets/media/works/bafan.webp",
+    "website": "assets/media/works/bafan.mp4"
+  },
+  {
+    "id": "bosaad",
+    "name": "بوسعد للبلاستيك",
+    "category": "تصميم المتاجر",
+    "subCategory": "تصميم متجر",
+    "description": "متجر أدوات منزلية وبلاستيك بأقسام كثيرة مرتبة.",
+    "image": "assets/media/works/bosaad.webp",
+    "website": "assets/media/works/bosaad.mp4"
+  },
+  {
+    "id": "tiryaq",
+    "name": "جمعية ترياق",
+    "category": "تصميم المتاجر",
+    "subCategory": "موقع جمعية",
+    "description": "موقع جمعية خيرية للوقف والتبرع بخطوات بسيطة.",
+    "image": "assets/media/works/tiryaq.webp",
+    "website": "assets/media/works/tiryaq.mp4"
+  },
+  {
+    "id": "atlas-soul",
+    "name": "روح الأطلس",
+    "category": "تصميم المتاجر",
+    "subCategory": "تصميم متجر",
+    "description": "متجر منتجات الحمام المغربي الأصلي بهوية دافية.",
+    "image": "assets/media/works/atlas-soul.webp",
+    "website": "assets/media/works/atlas-soul.mp4"
+  },
+  {
+    "id": "soft-rest",
+    "name": "سوفت رست",
+    "category": "تصميم المتاجر",
+    "subCategory": "تصميم متجر",
+    "description": "متجر مراتب ومستلزمات نوم بعروض واضحة.",
+    "image": "assets/media/works/soft-rest.webp",
+    "website": "assets/media/works/soft-rest.mp4"
+  },
+  {
+    "id": "luvoria",
+    "name": "LUVORIA",
+    "category": "تصميم المتاجر",
+    "subCategory": "صفحة هبوط",
+    "description": "صفحة هبوط لمنتجات العناية بالبشرة، مبنية عشان توصل الزائر للشراء.",
+    "image": "assets/media/works/luvoria.webp",
+    "website": "assets/media/works/luvoria.mp4"
+  },
+  {
+    "id": "adhq-tamra",
+    "name": "عذق وتمرة",
+    "category": "تصميم المتاجر",
+    "subCategory": "تصميم متجر",
+    "description": "متجر تمور فاخرة من قلب النخيل.",
+    "image": "assets/media/works/adhq-tamra.webp",
+    "website": "assets/media/works/adhq-tamra.mp4"
+  },
+  {
+    "id": "arabat-alhuqool",
+    "name": "عربة الحقول",
+    "category": "تصميم المتاجر",
+    "subCategory": "تصميم متجر",
+    "description": "متجر فواكه وخضار طازجة بأقسام سهلة.",
+    "image": "assets/media/works/arabat-alhuqool.webp",
+    "website": "assets/media/works/arabat-alhuqool.mp4"
+  },
+  {
+    "id": "lavan",
+    "name": "لافان",
+    "category": "تصميم المتاجر",
+    "subCategory": "تصميم متجر",
+    "description": "متجر عطور وهدايا وتنسيقات فاخرة.",
+    "image": "assets/media/works/lavan.webp",
+    "website": "assets/media/works/lavan.mp4"
+  },
+  {
+    "id": "jass",
+    "name": "متجر جاس",
+    "category": "تصميم المتاجر",
+    "subCategory": "تصميم متجر",
+    "description": "متجر عناية ذاتية بروتين يومي وتجربة هادية.",
+    "image": "assets/media/works/jass.webp",
+    "website": "assets/media/works/jass.mp4"
+  },
+  {
+    "id": "asia-family",
+    "name": "آسيا فاميلي",
+    "category": "تصميم المتاجر",
+    "subCategory": "تصميم متجر",
+    "description": "متجر أطعمة ومنتجات آسيوية بأقسام واضحة.",
+    "image": "assets/media/works/asia-family.webp",
+    "website": "assets/media/works/asia-family.mp4"
+  },
+  {
+    "id": "alassaf",
+    "name": "العساف",
+    "category": "تصميم المتاجر",
+    "subCategory": "موقع خدمات",
+    "description": "موقع شروحات وخدمات قانونية بأسلوب بسيط واحترافي.",
+    "image": "assets/media/works/alassaf.webp",
+    "website": "assets/media/works/alassaf.mp4"
+  },
+  {
+    "id": "alvera",
+    "name": "ALVERA",
+    "category": "تصميم المتاجر",
+    "subCategory": "متجر إنجليزي",
+    "description": "متجر منتجات عناية بالبشرة باللغة الإنجليزية.",
+    "image": "assets/media/works/alvera.webp",
+    "website": "assets/media/works/alvera.mp4"
+  },
+  {
+    "id": "father-lassen",
+    "name": "فاذر لاسن للورد",
+    "category": "تصميم المتاجر",
+    "subCategory": "تصميم متجر",
+    "description": "متجر ورود وتنسيقات هدايا.",
+    "image": "assets/media/works/father-lassen.webp",
+    "website": "assets/media/works/father-lassen.mp4"
+  },
+  {
+    "id": "hudah",
+    "name": "هدى باقة بلس",
+    "category": "تصميم المتاجر",
+    "subCategory": "تصميم متجر",
+    "description": "متجر منتجات عناية طبيعية بالبشرة.",
+    "image": "assets/media/works/hudah.webp",
+    "website": "assets/media/works/hudah.mp4"
+  },
+  {
+    "id": "namaq-oud",
+    "name": "نمق العود",
+    "category": "تصميم المتاجر",
+    "subCategory": "تصميم متجر",
+    "description": "متجر عود وبخور بعروض موسمية.",
+    "image": "assets/media/works/namaq-oud.webp",
+    "website": "assets/media/works/namaq-oud.mp4"
+  },
+  {
+    "id": "motion-fashion",
+    "name": "فيديو إعلاني لمتجر أزياء",
+    "category": "الجرافيك والموشن",
+    "subCategory": "موشن بالذكاء الاصطناعي",
+    "description": "فيديو قصير للسوشيال بلقطات سينمائية وشخصيات محتشمة.",
+    "type": "video",
+    "image": "assets/media/works/motion-fashion.webp",
+    "website": "assets/media/works/motion-fashion.mp4"
+  },
+  {
+    "id": "motion-toys",
+    "name": "فيديو إعلاني لصندوق الألعاب",
+    "category": "الجرافيك والموشن",
+    "subCategory": "موشن بالذكاء الاصطناعي",
+    "description": "إعلان قصير لمتجر ألعاب أطفال بمشاهد عائلية.",
+    "type": "video",
+    "image": "assets/media/works/motion-toys.webp",
+    "website": "assets/media/works/motion-toys.mp4"
+  },
+  {
+    "id": "motion-lumier",
+    "name": "فيديو إعلاني لمتجر لومير",
+    "category": "الجرافيك والموشن",
+    "subCategory": "موشن بالذكاء الاصطناعي",
+    "description": "إعلان أحذية رجالية بلقطات فخمة.",
+    "type": "video",
+    "image": "assets/media/works/motion-lumier.webp",
+    "website": "assets/media/works/motion-lumier.mp4"
+  },
+  {
+    "id": "motion-alanoud",
+    "name": "فيديو إعلاني لتمور العنود",
+    "category": "الجرافيك والموشن",
+    "subCategory": "موشن بالذكاء الاصطناعي",
+    "description": "إعلان تمور بلقطات قريبة تبين جودة المنتج.",
+    "type": "video",
+    "image": "assets/media/works/motion-alanoud.webp",
+    "website": "assets/media/works/motion-alanoud.mp4"
+  },
+  {
+    "id": "motion-toy-car",
+    "name": "فيديو إعلاني لألعاب الأطفال",
+    "category": "الجرافيك والموشن",
+    "subCategory": "موشن بالذكاء الاصطناعي",
+    "description": "إعلان سيارات ألعاب للأطفال بمشهد خارجي.",
+    "type": "video",
+    "image": "assets/media/works/motion-toy-car.webp",
+    "website": "assets/media/works/motion-toy-car.mp4"
+  },
+  {
+    "id": "seo-case-3-months",
+    "name": "سيو لمتجر عميل: باقة 3 شهور",
+    "category": "السيو والظهور في جوجل",
+    "subCategory": "تحسين محركات البحث",
+    "description": "زيارات جوجل زادت من 1,512 إلى 10,456 زيارة في الشهر خلال 3 شهور، بعد تحسين 150 منتج وكتابة 12 مقال.",
+    "type": "gallery",
+    "image": "assets/media/works/seo-case-3-months.webp",
+    "images": [
+      "assets/media/works/seo-case-3-months-1.webp"
+    ]
+  },
+  {
+    "id": "seo-case-1-month",
+    "name": "سيو لمتجر عميل: باقة شهر",
+    "category": "السيو والظهور في جوجل",
+    "subCategory": "تحسين محركات البحث",
+    "description": "زيارات جوجل زادت من 41 إلى 247 خلال شهر، بعد تحسين 50 منتج وكتابة 4 مقالات.",
+    "type": "gallery",
+    "image": "assets/media/works/seo-case-1-month.webp",
+    "images": [
+      "assets/media/works/seo-case-1-month-1.webp"
+    ]
+  },
+  {
+    "id": "seo-case-100-products",
+    "name": "سيو داخلي لـ100 منتج",
+    "category": "السيو والظهور في جوجل",
+    "subCategory": "تحسين صفحات المنتجات",
+    "description": "زيارات جوجل زادت من 92 إلى 474 خلال شهر بعد تحسين 100 منتج وصورها.",
+    "type": "gallery",
+    "image": "assets/media/works/seo-case-100-products.webp",
+    "images": [
+      "assets/media/works/seo-case-100-products-1.webp"
+    ]
+  },
+  {
+    "id": "sales-170",
+    "name": "زيادة مبيعات متجر 170% في شهرين",
+    "category": "التسويق والسوشيال",
+    "subCategory": "إدارة حملات إعلانية",
+    "description": "المبيعات الشهرية زادت من 30 ألف إلى 80 ألف ريال، والطلبات من 141 إلى 331 طلب.",
+    "type": "gallery",
+    "image": "assets/media/works/sales-170.webp",
+    "images": [
+      "assets/media/works/sales-170-1.webp",
+      "assets/media/works/sales-170-2.webp",
+      "assets/media/works/sales-170-3.webp"
+    ]
+  },
+  {
+    "id": "arab-shooter",
+    "name": "نتائج متجر عرب شوتر",
+    "category": "التسويق والسوشيال",
+    "subCategory": "نتائج متجر",
+    "description": "من لوحة سلة: 169 طلب و16,408 ريال مبيعات في شهر أبريل.",
+    "type": "gallery",
+    "image": "assets/media/works/arab-shooter.webp",
+    "images": [
+      "assets/media/works/arab-shooter-1.webp",
+      "assets/media/works/arab-shooter-2.webp"
+    ]
+  },
+  {
+    "id": "seo-articles",
+    "name": "مقالات مدونة للمتجر",
+    "category": "السيو والظهور في جوجل",
+    "subCategory": "كتابة مقالات SEO",
+    "description": "مقالات مكتوبة على الكلمات اللي يبحث عنها العملاء عشان المتجر يظهر في جوجل.",
+    "type": "gallery",
+    "image": "assets/media/works/seo-articles.webp",
+    "images": [
+      "assets/media/works/seo-articles-1.webp"
+    ]
   }
 ]
