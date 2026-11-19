@@ -2383,3 +2383,65 @@ img {
     font-size: 14px;
   }
 }
+
+/* =========================
+   لون ثابت لكل قسم (البطاقة العلوية + بطاقات الأعمال تحتها)
+   ========================= */
+
+.category-showcase-card[data-key="all"],
+.project-card[data-key="all"] {
+  --category-color: #5f63f2;
+  --category-deep: #4d45d8;
+}
+
+.category-showcase-card[data-key="stores"],
+.project-card[data-key="stores"] {
+  --category-color: #8a4fd8;
+  --category-deep: #6f36bd;
+}
+
+.category-showcase-card[data-key="seo"],
+.project-card[data-key="seo"] {
+  --category-color: #0d8f80;
+  --category-deep: #08705f;
+}
+
+.category-showcase-card[data-key="marketing"],
+.project-card[data-key="marketing"] {
+  --category-color: #d8612b;
+  --category-deep: #b84b1a;
+}
+
+.category-showcase-card[data-key="design"],
+.project-card[data-key="design"] {
+  --category-color: #d1468a;
+  --category-deep: #b0306f;
+}
+
+.category-showcase-card[data-key] {
+  --category-soft: color-mix(in srgb, var(--category-color) 10%, transparent);
+  --category-border: color-mix(in srgb, var(--category-color) 24%, transparent);
+}
+
+.category-showcase-card[data-key].active {
+  background: linear-gradient(135deg, var(--category-deep), var(--category-color));
+}
+
+.project-card[data-key] .project-tag {
+  background: color-mix(in srgb, var(--category-color) 10%, #ffffff);
+  color: var(--category-deep);
+}
+
+.project-card[data-key] .project-link {
+  background: color-mix(in srgb, var(--category-color) 10%, #ffffff);
+  color: var(--category-deep);
+}
+
+.project-card[data-key] .project-link:hover {
+  background: var(--category-deep);
+  color: #ffffff;
+}
+
+.project-card[data-key] .project-media-badge {
+  color: var(--category-deep);
+}

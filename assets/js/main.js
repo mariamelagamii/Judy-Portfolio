@@ -265,6 +265,14 @@ function selectCategory(category, { updateUrl = true } = {}) {
       item.classList.toggle("active", item.dataset.category === activeCategory);
     });
 
+  /* لما القسم يتفتح من رابط مباشر: نخلي بطاقته ظاهرة في الشريط */
+  const activeCard = categoryShowcase?.querySelector(".category-showcase-card.active");
+  if (activeCard && !updateUrl) {
+    const box = categoryShowcase.getBoundingClientRect();
+    const card = activeCard.getBoundingClientRect();
+    categoryShowcase.scrollLeft += card.left - box.left - (box.width - card.width) / 2;
+  }
+
   renderProjects(
     activeCategory === "الكل"
       ? projects
@@ -301,6 +309,7 @@ function renderCategoryShowcase() {
             category === activeCategory ? "active" : ""
           }"
           data-category="${escapeAttribute(category)}"
+          data-key="${CATEGORY_SLUGS[category] || "all"}"
           style="--category-index: ${index}"
         >
           <div class="category-showcase-top">
@@ -356,7 +365,7 @@ function renderProjects(data) {
             ? "fa-solid fa-play"
             : "fa-solid fa-arrow-up-right-from-square";
         return `
-        <article class="project-card${isGallery ? " project-card--gallery" : ""}">
+        <article class="project-card${isGallery ? " project-card--gallery" : ""}" data-key="${CATEGORY_SLUGS[project.category] || "stores"}">
           <a
             class="project-preview"
             href="${escapeAttribute(project.website || "#")}"
