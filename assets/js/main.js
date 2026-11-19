@@ -155,7 +155,7 @@ async function loadProjects() {
       throw new Error(`تعذر تحميل البيانات: ${response.status}`);
     }
 
-    projects = await response.json();
+    projects = (await response.json()).filter((project) => !project.hidden);
 
     renderCategoryShowcase();
     renderProjects(projects);
@@ -313,12 +313,13 @@ function renderProjects(data) {
               src="${escapeAttribute(project.image)}"
               alt="${escapeAttribute(project.name)}"
               loading="lazy"
+              decoding="async"
             >
           </a>
 
           <div class="project-category-icon">
             <img
-              src="https://j.top4top.io/p_3876sqo641.png"
+              src="assets/media/brand/judy-mark.webp"
               alt=""
               aria-hidden="true"
             >
