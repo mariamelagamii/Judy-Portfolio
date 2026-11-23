@@ -54,6 +54,51 @@
     "website": "assets/media/works/nyazitoys.mp4"
   },
   {
+    "id": "binzahim-oud",
+    "name": "بن زاحم للعود",
+    "category": "تصميم المتاجر",
+    "subCategory": "ثيم رائد",
+    "description": "متجر عود وبخور ودهن عود، بواجهة فخمة وأقسام واضحة.",
+    "image": "assets/media/works/binzahim-oud.webp",
+    "website": "assets/media/works/binzahim-oud.mp4"
+  },
+  {
+    "id": "alamro-oud",
+    "name": "العمرو للعود",
+    "category": "تصميم المتاجر",
+    "subCategory": "ثيم رائد",
+    "description": "متجر عود طبيعي ودهن عود أصلي وبخور، بهوية مستوحاة من الصحراء.",
+    "image": "assets/media/works/alamro-oud.webp",
+    "website": "assets/media/works/alamro-oud.mp4"
+  },
+  {
+    "id": "ghalahome",
+    "name": "غلا هوم",
+    "category": "تصميم المتاجر",
+    "subCategory": "ثيم رائد",
+    "description": "متجر مفارش ولحاف فاخرة، بأقسام للشتوي والصيفي وعروض واضحة.",
+    "image": "assets/media/works/ghalahome.webp",
+    "website": "assets/media/works/ghalahome.mp4"
+  },
+  {
+    "id": "jawalcom16",
+    "name": "جوال كوم",
+    "category": "تصميم المتاجر",
+    "subCategory": "ثيم رائد",
+    "description": "متجر جوالات وإلكترونيات وإكسسوارات، بعروض وأسعار ظاهرة.",
+    "image": "assets/media/works/jawalcom16.webp",
+    "website": "assets/media/works/jawalcom16.mp4"
+  },
+  {
+    "id": "nozlalbryeh",
+    "name": "نزل البرية",
+    "category": "تصميم المتاجر",
+    "subCategory": "ثيم رائد",
+    "description": "متجر لوازم البر والكشتات والتخييم، بصور تحمس على الطلعة.",
+    "image": "assets/media/works/nozlalbryeh.webp",
+    "website": "assets/media/works/nozlalbryeh.mp4"
+  },
+  {
     "id": "negma-ksa",
     "name": "نجمة",
     "category": "تصميم المتاجر",
